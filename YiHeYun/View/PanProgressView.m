@@ -32,6 +32,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         _unit = unit;
+        self.layer.cornerRadius = 3;
+        self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor whiteColor];
         [self initView];
     }

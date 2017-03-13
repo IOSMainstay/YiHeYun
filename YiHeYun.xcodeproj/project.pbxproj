@@ -10,6 +10,8 @@
 		0434E1BD1E7277450088D533 /* ZSPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434E1BC1E7277450088D533 /* ZSPickView.m */; };
 		0434E1C01E728CC00088D533 /* SelectTimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434E1BF1E728CC00088D533 /* SelectTimeView.m */; };
 		0434E1C61E729C660088D533 /* PanProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434E1C51E729C660088D533 /* PanProgressView.m */; };
+		0448F8731E76397A002FE5D3 /* SetRemindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448F8721E76397A002FE5D3 /* SetRemindVC.m */; };
+		0448F8781E7645EA002FE5D3 /* SelectDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0448F8771E7645EA002FE5D3 /* SelectDateView.m */; };
 		044AC4FA1E6FDFEE00EE43E3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC4F91E6FDFEE00EE43E3 /* LoginVC.m */; };
 		044AC4FD1E6FE12100EE43E3 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC4FC1E6FE12100EE43E3 /* HomeVC.m */; };
 		044AC5001E6FE13B00EE43E3 /* FindVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC4FF1E6FE13B00EE43E3 /* FindVC.m */; };
@@ -21,6 +23,7 @@
 		044AC5121E6FFB3100EE43E3 /* BloodSugarSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC5111E6FFB3100EE43E3 /* BloodSugarSetVC.m */; };
 		044AC5151E6FFBA700EE43E3 /* HeartRateSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC5141E6FFBA700EE43E3 /* HeartRateSetVC.m */; };
 		044AC5181E6FFBBD00EE43E3 /* BloodPressureSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC5171E6FFBBD00EE43E3 /* BloodPressureSetVC.m */; };
+		04D2D28E1E76501600324FDB /* LVRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2D28D1E76501600324FDB /* LVRecordTool.m */; };
 		201CA26E1E7571DC00E7DFE7 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA26D1E7571DC00E7DFE7 /* RegisterVC.m */; };
 		201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2701E7571F400E7DFE7 /* ForgetPswVC.m */; };
 		201CA2741E75805300E7DFE7 /* SetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2731E75805300E7DFE7 /* SetPswVC.m */; };
@@ -92,6 +95,10 @@
 		0434E1BF1E728CC00088D533 /* SelectTimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTimeView.m; sourceTree = "<group>"; };
 		0434E1C41E729C660088D533 /* PanProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanProgressView.h; sourceTree = "<group>"; };
 		0434E1C51E729C660088D533 /* PanProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanProgressView.m; sourceTree = "<group>"; };
+		0448F8711E76397A002FE5D3 /* SetRemindVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetRemindVC.h; sourceTree = "<group>"; };
+		0448F8721E76397A002FE5D3 /* SetRemindVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetRemindVC.m; sourceTree = "<group>"; };
+		0448F8771E7645EA002FE5D3 /* SelectDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDateView.m; sourceTree = "<group>"; };
+		0448F8791E7645EF002FE5D3 /* SelectDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDateView.h; sourceTree = "<group>"; };
 		044AC4F81E6FDFEE00EE43E3 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		044AC4F91E6FDFEE00EE43E3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		044AC4FB1E6FE12100EE43E3 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
@@ -114,6 +121,8 @@
 		044AC5141E6FFBA700EE43E3 /* HeartRateSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateSetVC.m; sourceTree = "<group>"; };
 		044AC5161E6FFBBD00EE43E3 /* BloodPressureSetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodPressureSetVC.h; sourceTree = "<group>"; };
 		044AC5171E6FFBBD00EE43E3 /* BloodPressureSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressureSetVC.m; sourceTree = "<group>"; };
+		04D2D28D1E76501600324FDB /* LVRecordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRecordTool.m; sourceTree = "<group>"; };
+		04D2D28F1E76501A00324FDB /* LVRecordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRecordTool.h; sourceTree = "<group>"; };
 		201CA26C1E7571DC00E7DFE7 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		201CA26D1E7571DC00E7DFE7 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 		201CA26F1E7571F400E7DFE7 /* ForgetPswVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPswVC.h; sourceTree = "<group>"; };
@@ -250,6 +259,9 @@
 		0434E1BA1E72773D0088D533 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0451066B1E764DB100874C06 /* Record */,
+				0448F8791E7645EF002FE5D3 /* SelectDateView.h */,
+				0448F8771E7645EA002FE5D3 /* SelectDateView.m */,
 				0434E1C41E729C660088D533 /* PanProgressView.h */,
 				0434E1C51E729C660088D533 /* PanProgressView.m */,
 				0434E1BE1E728CC00088D533 /* SelectTimeView.h */,
@@ -258,6 +270,15 @@
 				0434E1BC1E7277450088D533 /* ZSPickView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0451066B1E764DB100874C06 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				04D2D28F1E76501A00324FDB /* LVRecordTool.h */,
+				04D2D28D1E76501600324FDB /* LVRecordTool.m */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 		0E5FEDA3998805E518200B16 /* Pods */ = {
@@ -630,6 +651,8 @@
 			children = (
 				044AC5011E6FE17300EE43E3 /* SetUpVC.h */,
 				044AC5021E6FE17300EE43E3 /* SetUpVC.m */,
+				0448F8711E76397A002FE5D3 /* SetRemindVC.h */,
+				0448F8721E76397A002FE5D3 /* SetRemindVC.m */,
 				044AC5071E6FF16E00EE43E3 /* LongSitRemindSetVC.h */,
 				044AC5081E6FF16E00EE43E3 /* LongSitRemindSetVC.m */,
 				044AC50A1E6FF18A00EE43E3 /* WeatherRemindVC.h */,
@@ -706,8 +729,8 @@
 				TargetAttributes = {
 					207242391E62B97100783CD4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = M2CBW36AQZ;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4B89LPR7JW;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -802,6 +825,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0448F8781E7645EA002FE5D3 /* SelectDateView.m in Sources */,
 				207242F51E62C2FB00783CD4 /* PPCounterConst.m in Sources */,
 				207242F11E62C2FB00783CD4 /* AEAlertView.m in Sources */,
 				2071EF211E74F850001020D7 /* UserInfo.m in Sources */,
@@ -833,6 +857,7 @@
 				207243351E62C34800783CD4 /* UITabBar+RedPoint.m in Sources */,
 				2071EF1E1E74F82C001020D7 /* NetworkManager.m in Sources */,
 				2072430A1E62C2FB00783CD4 /* OptionsBarView.m in Sources */,
+				04D2D28E1E76501600324FDB /* LVRecordTool.m in Sources */,
 				207243051E62C2FB00783CD4 /* JHHJCenterBGView.m in Sources */,
 				207242F81E62C2FB00783CD4 /* UILabel+PPCounter.m in Sources */,
 				207243011E62C2FB00783CD4 /* ImgScrollView.m in Sources */,
@@ -856,6 +881,7 @@
 				044AC4FA1E6FDFEE00EE43E3 /* LoginVC.m in Sources */,
 				207243171E62C2FB00783CD4 /* StarRatingView.m in Sources */,
 				201CA26E1E7571DC00E7DFE7 /* RegisterVC.m in Sources */,
+				0448F8731E76397A002FE5D3 /* SetRemindVC.m in Sources */,
 				207242421E62B97100783CD4 /* AppDelegate.m in Sources */,
 				207243361E62C34800783CD4 /* UITabBar+BadgeValue.m in Sources */,
 				044AC50F1E6FF82A00EE43E3 /* StupCountSetVC.m in Sources */,
@@ -985,15 +1011,16 @@
 			baseConfigurationReference = 5954609EEFCA5A37A0398014 /* Pods-YiHeYun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M2CBW36AQZ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4B89LPR7JW;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = YiHeYun/YiHeYun.pch;
 				INFOPLIST_FILE = YiHeYun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bd2e2377-94bf-41ce-8bdc-4fd8cd83677a";
-				PROVISIONING_PROFILE_SPECIFIER = CydfCMDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WARNING_CFLAGS = (
 					"-Wno-deprecated-declarations",
 					"-Wno-unused-variable",
@@ -1007,16 +1034,16 @@
 			baseConfigurationReference = 609D179F597C6764A723B63F /* Pods-YiHeYun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = M2CBW36AQZ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4B89LPR7JW;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = YiHeYun/YiHeYun.pch;
 				INFOPLIST_FILE = YiHeYun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "027a8192-72b4-495b-863b-8677c35fd29d";
-				PROVISIONING_PROFILE_SPECIFIER = CydfCMDis;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WARNING_CFLAGS = (
 					"-Wno-deprecated-declarations",
 					"-Wno-unused-variable",

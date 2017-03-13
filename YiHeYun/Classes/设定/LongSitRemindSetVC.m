@@ -42,15 +42,7 @@
     selectTimeView.hidden = YES;
     selectTimeView.sureSlect = ^(NSString *time1,NSString *time2){
         [weakSelf hiddenAllView];
-        if (isStart) {
-            weakSelf.startTimeLB.text = [NSString stringWithFormat:@"%@:%@",time1,time2];
-            weakSelf.startTimeLB.text  = [ weakSelf.startTimeLB.text stringByReplacingOccurrencesOfString:@"点" withString:@""];
-            weakSelf.startTimeLB.text  = [ weakSelf.startTimeLB.text stringByReplacingOccurrencesOfString:@"分" withString:@""];
-        }else{
-            weakSelf.endTimeLB.text = [NSString stringWithFormat:@"%@:%@",time1,time2];
-            weakSelf.endTimeLB.text  = [ weakSelf.endTimeLB.text stringByReplacingOccurrencesOfString:@"点" withString:@""];
-            weakSelf.endTimeLB.text  = [ weakSelf.endTimeLB.text stringByReplacingOccurrencesOfString:@"分" withString:@""];
-        }
+        [weakSelf setDataForView:time1 andT:time2];
 
     };
     selectTimeView.cancleSlect = ^(){
@@ -58,6 +50,18 @@
     };
     [self.view addSubview:selectTimeView];
 
+}
+
+- (void)setDataForView:(NSString *)time1 andT:(NSString *)time2{
+    if (isStart) {
+        self.startTimeLB.text = [NSString stringWithFormat:@"%@:%@",time1,time2];
+        self.startTimeLB.text  = [ self.startTimeLB.text stringByReplacingOccurrencesOfString:@"点" withString:@""];
+        self.startTimeLB.text  = [ self.startTimeLB.text stringByReplacingOccurrencesOfString:@"分" withString:@""];
+    }else{
+        self.endTimeLB.text = [NSString stringWithFormat:@"%@:%@",time1,time2];
+        self.endTimeLB.text  = [ self.endTimeLB.text stringByReplacingOccurrencesOfString:@"点" withString:@""];
+        self.endTimeLB.text  = [ self.endTimeLB.text stringByReplacingOccurrencesOfString:@"分" withString:@""];
+    }
 }
 
 - (void)hiddenAllView{
