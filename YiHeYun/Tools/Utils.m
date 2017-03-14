@@ -17,6 +17,14 @@
 
 @implementation Utils
 
+
++(UIViewController *)getVCInBoard:(NSString *)bord ID:(NSString *)idd{
+    UIStoryboard *story = [UIStoryboard storyboardWithName:bord bundle:nil];
+
+    return [story instantiateViewControllerWithIdentifier:idd];
+
+}
+
 //判断网络状态
 + (BOOL)getNetStatus {
     if ([NetworkUtil currentNetworkStatus] != NET_UNKNOWN) { //有网

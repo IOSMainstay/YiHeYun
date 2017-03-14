@@ -23,6 +23,8 @@
 		044AC5121E6FFB3100EE43E3 /* BloodSugarSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC5111E6FFB3100EE43E3 /* BloodSugarSetVC.m */; };
 		044AC5151E6FFBA700EE43E3 /* HeartRateSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC5141E6FFBA700EE43E3 /* HeartRateSetVC.m */; };
 		044AC5181E6FFBBD00EE43E3 /* BloodPressureSetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044AC5171E6FFBBD00EE43E3 /* BloodPressureSetVC.m */; };
+		04AEAA631E7783A0008112D8 /* UrgentCallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEAA621E7783A0008112D8 /* UrgentCallVC.m */; };
+		04AEAA661E778D55008112D8 /* AddUrgentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AEAA651E778D55008112D8 /* AddUrgentVC.m */; };
 		04D2D28E1E76501600324FDB /* LVRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D2D28D1E76501600324FDB /* LVRecordTool.m */; };
 		201CA26E1E7571DC00E7DFE7 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA26D1E7571DC00E7DFE7 /* RegisterVC.m */; };
 		201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2701E7571F400E7DFE7 /* ForgetPswVC.m */; };
@@ -121,6 +123,10 @@
 		044AC5141E6FFBA700EE43E3 /* HeartRateSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateSetVC.m; sourceTree = "<group>"; };
 		044AC5161E6FFBBD00EE43E3 /* BloodPressureSetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodPressureSetVC.h; sourceTree = "<group>"; };
 		044AC5171E6FFBBD00EE43E3 /* BloodPressureSetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressureSetVC.m; sourceTree = "<group>"; };
+		04AEAA611E7783A0008112D8 /* UrgentCallVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrgentCallVC.h; sourceTree = "<group>"; };
+		04AEAA621E7783A0008112D8 /* UrgentCallVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrgentCallVC.m; sourceTree = "<group>"; };
+		04AEAA641E778D55008112D8 /* AddUrgentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUrgentVC.h; sourceTree = "<group>"; };
+		04AEAA651E778D55008112D8 /* AddUrgentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUrgentVC.m; sourceTree = "<group>"; };
 		04D2D28D1E76501600324FDB /* LVRecordTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRecordTool.m; sourceTree = "<group>"; };
 		04D2D28F1E76501A00324FDB /* LVRecordTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRecordTool.h; sourceTree = "<group>"; };
 		201CA26C1E7571DC00E7DFE7 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
@@ -665,6 +671,10 @@
 				044AC5141E6FFBA700EE43E3 /* HeartRateSetVC.m */,
 				044AC5161E6FFBBD00EE43E3 /* BloodPressureSetVC.h */,
 				044AC5171E6FFBBD00EE43E3 /* BloodPressureSetVC.m */,
+				04AEAA611E7783A0008112D8 /* UrgentCallVC.h */,
+				04AEAA621E7783A0008112D8 /* UrgentCallVC.m */,
+				04AEAA641E778D55008112D8 /* AddUrgentVC.h */,
+				04AEAA651E778D55008112D8 /* AddUrgentVC.m */,
 			);
 			path = "设定";
 			sourceTree = "<group>";
@@ -832,6 +842,7 @@
 				207242F71E62C2FB00783CD4 /* UIButton+PPCounter.m in Sources */,
 				044AC5091E6FF16E00EE43E3 /* LongSitRemindSetVC.m in Sources */,
 				207243031E62C2FB00783CD4 /* AEIndicator.m in Sources */,
+				04AEAA661E778D55008112D8 /* AddUrgentVC.m in Sources */,
 				0434E1C01E728CC00088D533 /* SelectTimeView.m in Sources */,
 				207242F61E62C2FB00783CD4 /* PPCounterEngine.m in Sources */,
 				0434E1C61E729C660088D533 /* PanProgressView.m in Sources */,
@@ -867,6 +878,7 @@
 				207243191E62C2FB00783CD4 /* AEButton.m in Sources */,
 				207243001E62C2FB00783CD4 /* ImgLargeScrollView.m in Sources */,
 				044AC4FD1E6FE12100EE43E3 /* HomeVC.m in Sources */,
+				04AEAA631E7783A0008112D8 /* UrgentCallVC.m in Sources */,
 				207242781E62C13500783CD4 /* NetworkUtil.m in Sources */,
 				044AC5151E6FFBA700EE43E3 /* HeartRateSetVC.m in Sources */,
 				207243181E62C2FB00783CD4 /* AEToast.m in Sources */,

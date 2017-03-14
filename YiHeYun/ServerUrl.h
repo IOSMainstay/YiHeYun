@@ -3,7 +3,7 @@
 //  ArtEast
 //
 //  Created by yibao on 16/9/30.
-//  Copyright © 2016年 北京艺宝网络文化有限公司. All rights reserved.
+//  Copy right © 2016年 北京艺宝网络文化有限公司. All rights reserved.
 //
 
 #ifndef ServerUrl_h

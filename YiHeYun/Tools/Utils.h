@@ -10,6 +10,8 @@
 
 @interface Utils : NSObject
 
++(UIViewController *)getVCInBoard:(NSString *)bord ID:(NSString *)idd;
+
 /*!
  *  @brief 判断网络状态
  */
