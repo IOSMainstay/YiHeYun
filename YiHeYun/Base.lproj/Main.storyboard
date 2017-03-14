@@ -496,17 +496,94 @@
         <!--发现-->
         <scene sceneID="9Wa-Zl-6pp">
             <objects>
-                <viewController id="UrN-zo-igi" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="UrN-zo-igi" customClass="FindVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k2j-tk-qMp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="CIw-Hf-VJ8" customClass="SDCycleScrollView">
+                                <rect key="frame" x="15" y="10" width="345" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="255" sectionHeaderHeight="18" sectionFooterHeight="18" id="hNF-wT-ItN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="555"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="findCell" id="7Ef-Wy-trE" customClass="FindCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="255"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Ef-Wy-trE" id="fww-hZ-r5T">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" id="0XV-Iw-cjA">
+                                                    <rect key="frame" x="15" y="10" width="345" height="245"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nnn.png" id="Sc8-W1-cof">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="168"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最后10万张保健 免费领取" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dlg-7l-wpp">
+                                                            <rect key="frame" x="8" y="196" width="329" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.19737011194229126" green="0.19737011194229126" blue="0.19737011194229126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015-06-02 9:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8l2-bQ-zRS">
+                                                            <rect key="frame" x="8" y="216" width="309" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="cellBgView" destination="0XV-Iw-cjA" id="lQ7-uL-QaO"/>
+                                            <outlet property="cellImgView" destination="Sc8-W1-cof" id="bTE-WO-vJI"/>
+                                            <outlet property="cellTimeLB" destination="8l2-bQ-zRS" id="mH2-Re-q37"/>
+                                            <outlet property="cellTitleLB" destination="dlg-7l-wpp" id="XIh-Is-hrd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UrN-zo-igi" id="lvx-97-xmB"/>
+                                    <outlet property="delegate" destination="UrN-zo-igi" id="KuD-EG-LfE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="发现" id="yM6-8x-Bli"/>
+                    <connections>
+                        <outlet property="findTabView" destination="hNF-wT-ItN" id="rF5-oD-5Ua"/>
+                        <outlet property="topBannerView" destination="CIw-Hf-VJ8" id="XY9-JT-7qS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awj-vD-0Om" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="525.625" y="-151.18666666666667"/>
+            <point key="canvasLocation" x="525.5" y="-151.5"/>
         </scene>
         <!--首页-->
         <scene sceneID="tne-QT-ifu">
@@ -1954,6 +2031,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="nnn.png" width="395" height="173"/>
         <image name="photo_original_sel.png" width="20" height="21"/>
         <image name="soy_wxjt" width="10" height="19"/>
     </resources>
