@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIButton *bb = [[UIButton alloc]initWithFrame:CGRectMake(0, 200, WIDTH, 20)];
+    bb.backgroundColor = [UIColor redColor];
+    [self.view addSubview:bb];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1616,10 +1616,10 @@
             </objects>
             <point key="canvasLocation" x="-34.375" y="1488.5216666666665"/>
         </scene>
-        <!--我的-->
+        <!--MineVC-->
         <scene sceneID="YqQ-rx-ZtA">
             <objects>
-                <viewController id="mu7-8l-aJx" customClass="我的" sceneMemberID="viewController">
+                <viewController id="mu7-8l-aJx" customClass="MineVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HXG-as-UMo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
