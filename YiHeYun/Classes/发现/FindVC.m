@@ -27,13 +27,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-self.title = @"发现";
+    self.title = @"发现";
     UIView *bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, WIDTH,  WIDTH/2.0+20)];
     _topBannerView.frame = CGRectMake(15, 10, WIDTH-30, WIDTH/2.0);
     _topBannerView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    [bgView addSubview:_topBannerView];
+    _topBannerView.pageDotColor = [UIColor whiteColor];
+    _topBannerView.currentPageDotColor = AppThemeColor;
     _topBannerView.imageURLStringsGroup = @[@"http://pic.58pic.com/58pic/14/15/82/29S58PICTPg_1024.jpg",@"http://pic27.nipic.com/20130319/11935511_225831392000_2.jpg"];
     _topBannerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    [bgView addSubview:_topBannerView];
     _findTabView.tableHeaderView = bgView;
 }
 
