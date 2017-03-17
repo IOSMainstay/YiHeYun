@@ -95,8 +95,7 @@
             for(int j=0; j<4; j++) {
                 UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
                 btn.frame = CGRectMake(WIDTH/4*j, WIDTH/4*i, WIDTH/4, WIDTH/4);
-                [btn setTitle:[NSString stringWithFormat:@"%d",(3*i+j)+1] forState:0];
-                [btn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"home0%d",(3*i+j)]] forState:UIControlStateNormal];
+                [btn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"home%d",(3*i+j)]] forState:UIControlStateNormal];
                 btn.tag = 4*i+j;
                 [cell.contentView addSubview:btn];
             }
