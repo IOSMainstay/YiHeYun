@@ -96,6 +96,7 @@
 		2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072433B1E62C9F500783CD4 /* BaseNC.m */; };
 		2072433F1E62C9F500783CD4 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072433D1E62C9F500783CD4 /* BaseVC.m */; };
 		20939B791E8880BA00012664 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20939B781E8880BA00012664 /* UIImage+GradientColor.m */; };
+		20E3E3971E894E3E00FC8A72 /* ZBPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E3E3921E894E3E00FC8A72 /* ZBPieView.m */; };
 		3CAEB0B11E7BA87800C0B01E /* icon-通用按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAEB0B01E7BA87800C0B01E /* icon-通用按钮.png */; };
 		3F83B1EC07029C604D2C6AB1 /* libPods-YiHeYun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */; };
 /* End PBXBuildFile section */
@@ -272,6 +273,8 @@
 		2072433D1E62C9F500783CD4 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		20939B771E8880BA00012664 /* UIImage+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GradientColor.h"; sourceTree = "<group>"; };
 		20939B781E8880BA00012664 /* UIImage+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GradientColor.m"; sourceTree = "<group>"; };
+		20E3E3911E894E3E00FC8A72 /* ZBPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBPieView.h; sourceTree = "<group>"; };
+		20E3E3921E894E3E00FC8A72 /* ZBPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBPieView.m; sourceTree = "<group>"; };
 		3CAEB0B01E7BA87800C0B01E /* icon-通用按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-通用按钮.png"; sourceTree = "<group>"; };
 		5954609EEFCA5A37A0398014 /* Pods-YiHeYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.debug.xcconfig"; sourceTree = "<group>"; };
 		609D179F597C6764A723B63F /* Pods-YiHeYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.release.xcconfig"; sourceTree = "<group>"; };
@@ -513,6 +516,7 @@
 				207242EF1E62C2FB00783CD4 /* Utils.m */,
 				207242851E62C2FB00783CD4 /* AEFilePath.h */,
 				207242861E62C2FB00783CD4 /* AEFilePath.m */,
+				20E3E3861E894E1D00FC8A72 /* PieAnimationView(环形进度条) */,
 				04AEAA671E7792DC008112D8 /* SDCycleScrollView */,
 				207242871E62C2FB00783CD4 /* AlterView(弹框) */,
 				207242901E62C2FB00783CD4 /* CounterAnimation(计数动画) */,
@@ -783,6 +787,15 @@
 			path = "我";
 			sourceTree = "<group>";
 		};
+		20E3E3861E894E1D00FC8A72 /* PieAnimationView(环形进度条) */ = {
+			isa = PBXGroup;
+			children = (
+				20E3E3911E894E3E00FC8A72 /* ZBPieView.h */,
+				20E3E3921E894E3E00FC8A72 /* ZBPieView.m */,
+			);
+			path = "PieAnimationView(环形进度条)";
+			sourceTree = "<group>";
+		};
 		5BA5BD6F4DD78EEBB31B0139 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,6 +985,7 @@
 				207242781E62C13500783CD4 /* NetworkUtil.m in Sources */,
 				044AC5151E6FFBA700EE43E3 /* HeartRateSetVC.m in Sources */,
 				207243181E62C2FB00783CD4 /* AEToast.m in Sources */,
+				20E3E3971E894E3E00FC8A72 /* ZBPieView.m in Sources */,
 				04AEAA821E7792DC008112D8 /* SDCollectionViewCell.m in Sources */,
 				04AEAA811E7792DC008112D8 /* TAPageControl.m in Sources */,
 				207242FF1E62C2FB00783CD4 /* ImageViewer.m in Sources */,
@@ -1125,7 +1139,7 @@
 				GCC_PREFIX_HEADER = YiHeYun/YiHeYun.pch;
 				INFOPLIST_FILE = YiHeYun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1148,7 +1162,7 @@
 				GCC_PREFIX_HEADER = YiHeYun/YiHeYun.pch;
 				INFOPLIST_FILE = YiHeYun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cydf.YiHeYun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

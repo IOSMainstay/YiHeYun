@@ -10,6 +10,9 @@
 
 @interface HomeVC : BaseVC
 
+@property (weak, nonatomic) IBOutlet UIScrollView *_scrollView;
 @property (weak, nonatomic) IBOutlet UIView *headerView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLab;
+
 
 @end
