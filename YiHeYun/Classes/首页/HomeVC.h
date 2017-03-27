@@ -10,4 +10,6 @@
 
 @interface HomeVC : BaseVC
 
+@property (weak, nonatomic) IBOutlet UIView *headerView;
+
 @end
