@@ -99,6 +99,7 @@
 		20E3E3971E894E3E00FC8A72 /* ZBPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E3E3921E894E3E00FC8A72 /* ZBPieView.m */; };
 		3CAEB0B11E7BA87800C0B01E /* icon-通用按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAEB0B01E7BA87800C0B01E /* icon-通用按钮.png */; };
 		3F83B1EC07029C604D2C6AB1 /* libPods-YiHeYun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */; };
+		811B51011E8A8BDC00A7C717 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811B50FF1E8A8BDC00A7C717 /* Me.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -278,6 +279,7 @@
 		3CAEB0B01E7BA87800C0B01E /* icon-通用按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-通用按钮.png"; sourceTree = "<group>"; };
 		5954609EEFCA5A37A0398014 /* Pods-YiHeYun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.debug.xcconfig"; sourceTree = "<group>"; };
 		609D179F597C6764A723B63F /* Pods-YiHeYun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiHeYun.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiHeYun/Pods-YiHeYun.release.xcconfig"; sourceTree = "<group>"; };
+		811B51001E8A8BDC00A7C717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
 		D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YiHeYun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -426,6 +428,7 @@
 				04AEAA851E77962B008112D8 /* nnn.png */,
 				207242491E62B97100783CD4 /* Assets.xcassets */,
 				207242461E62B97100783CD4 /* Main.storyboard */,
+				811B50FF1E8A8BDC00A7C717 /* Me.storyboard */,
 				2072424B1E62B97100783CD4 /* LaunchScreen.storyboard */,
 				2072424E1E62B97100783CD4 /* Info.plist */,
 				2072423E1E62B97100783CD4 /* main.m */,
@@ -877,6 +880,7 @@
 				2072424A1E62B97100783CD4 /* Assets.xcassets in Resources */,
 				207242481E62B97100783CD4 /* Main.storyboard in Resources */,
 				207243141E62C2FB00783CD4 /* star_empty@3x.png in Resources */,
+				811B51011E8A8BDC00A7C717 /* Me.storyboard in Resources */,
 				3CAEB0B11E7BA87800C0B01E /* icon-通用按钮.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1035,6 +1039,14 @@
 				2072424C1E62B97100783CD4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		811B50FF1E8A8BDC00A7C717 /* Me.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				811B51001E8A8BDC00A7C717 /* Base */,
+			);
+			name = Me.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
