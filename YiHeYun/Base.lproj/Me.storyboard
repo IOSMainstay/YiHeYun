@@ -49,13 +49,13 @@
                     <view key="view" contentMode="scaleToFill" id="SFO-gz-B7g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="设置" id="opc-xo-BpD"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="hhB-5V-xn2" kind="show" id="cMD-3U-10r"/>
-                        <segue destination="6M4-zB-uYt" kind="show" id="2ib-vs-Qo0"/>
+                        <segue destination="hhB-5V-xn2" kind="show" identifier="aboutUsSegue" id="cMD-3U-10r"/>
+                        <segue destination="6M4-zB-uYt" kind="show" identifier="helpSegue" id="2ib-vs-Qo0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sSE-Tt-Iaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +161,7 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱／手机号／QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GK-vb-Gfz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮箱、手机号、QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GK-vb-Gfz">
                                 <rect key="frame" x="16" y="362" width="121.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -300,10 +300,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="留言" id="6tb-sy-L4a"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="leavePlaceholderLabel" destination="jqT-Vy-pEf" id="JG6-VZ-abG"/>
-                        <outlet property="leaveTextView" destination="Aiq-CU-Hc7" id="404-Oj-bcE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cd-M0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

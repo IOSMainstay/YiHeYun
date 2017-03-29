@@ -224,7 +224,15 @@
 
     }
   } else if (indexPath.section == 2) {
-    [self performSegueWithIdentifier:self.performSegues[indexPath.row] sender:nil];
+    switch (indexPath.row) { // telphone
+      case 3:
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://1111111"]];
+        break;
+
+      default:
+        [self performSegueWithIdentifier:self.performSegues[indexPath.row] sender:nil];
+        break;
+    }
   }
 }
 
