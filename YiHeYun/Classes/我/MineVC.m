@@ -25,7 +25,6 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  self.navBar.hidden = YES;
   [self creatTableView];
 }
 
@@ -68,7 +67,7 @@
   } else if (section == 1) {
     return 2;
   } else{
-    return 5;
+    return 6;
   }
 }
 
@@ -166,6 +165,10 @@
         cell.textLabel.text = @"意见反馈";
         break;
 
+      case 5:
+        cell.textLabel.text = @"留言";
+        break;
+
       default:
         break;
     }
@@ -234,7 +237,12 @@
 
 -(NSArray *)performSegues {
   if (!_performSegues) {
-    _performSegues = @[@"healthRecordSegue",@"friendsSegue",@"settingSegue",@"contactUsSegue",@"feedbackSegue"];
+    _performSegues = @[@"healthRecordSegue",
+                       @"friendsSegue",
+                       @"settingSegue",
+                       @"contactUsSegue",
+                       @"feedbackSegue",
+                       @"leaveSegue"];
   }
   return _performSegues;
 }

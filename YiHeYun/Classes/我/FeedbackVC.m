@@ -16,8 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *contactTextView;
 @property (weak, nonatomic) IBOutlet UILabel *contactPlaceholderLabel;
 
-
-
 @end
 
 @implementation FeedbackVC
@@ -33,7 +31,7 @@
   self.view.backgroundColor = [UIColor colorWithWhite:0.928 alpha:1.0];
 
   self.feedBackTextView.delegate = self;
-  self.feedBackTextView.textContainerInset = UIEdgeInsetsMake(10, 13, 10, 13);
+  self.feedBackTextView.textContainerInset = UIEdgeInsetsMake(12, 13, 12, 13);
 
   self.contactTextView.delegate = self;
   self.contactTextView.textContainerInset = UIEdgeInsetsMake(17, 13, 17, 13);
