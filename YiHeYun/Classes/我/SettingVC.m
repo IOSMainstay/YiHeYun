@@ -83,7 +83,7 @@
     for (int index = 0; index <= 1; index++) {
       UIImageView *iconImage = [[UIImageView alloc]init];
       [iconImage setContentMode:UIViewContentModeScaleAspectFit];
-      [iconImage constrainWidth:@"40" height:@"40"];
+      [iconImage constrainWidth:@"30" height:@"30"];
       iconImage.image = [UIImage imageNamed:imageNames[index]];
       [imageStackView addArrangedSubview:iconImage];
     }
@@ -136,7 +136,7 @@
     _dataSource = @[@{@"title":@"登录手机",@"message":telStr,    @"segue":@""},
                     @{@"title":@"修改密码",@"message":@"",       @"segue":@""},
                     @{@"title":@"关于我们",@"message":@"",       @"segue":@"aboutUsSegue"},
-                    @{@"title":@"分享",   @"message":@"",       @"imageNames":@[@"test_pengyouquan",@"test_pengyouquan"]},
+                    @{@"title":@"分享",   @"message":@"",       @"imageNames":@[@"weixin",@"pengyouquan"]},
                     @{@"title":@"检查更新",@"message":versionStr,@"segue":@""},
                     @{@"title":@"使用帮助",@"message":@"",       @"segue":@"helpSegue"},];
   }

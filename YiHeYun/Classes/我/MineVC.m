@@ -232,7 +232,7 @@
   } else if (indexPath.section == 2) {
     switch (indexPath.row) { // telphone
       case 3:
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://1111111"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://12306"]];
         break;
 
       default:
@@ -266,7 +266,7 @@
 }
 
 -(void)sendVerificationAction {
-
+  [self startTimeCount:verificationSendButton];
 }
 
 -(void)showMaskView{
@@ -317,20 +317,22 @@
   [verificationStackView setSpacing:30];
 
   verificationTextField = [[UITextField alloc] init];
+  [verificationStackView addArrangedSubview:verificationTextField];
+  [verificationTextField setPlaceholder:@"请输入"];
   [verificationTextField constrainWidth:@"100" height:@"35"];
   verificationTextField.textAlignment = NSTextAlignmentCenter;
   verificationTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
   verificationTextField.layer.borderWidth = 1;
-  [verificationStackView addArrangedSubview:verificationTextField];
 
   verificationSendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  [verificationStackView addArrangedSubview:verificationSendButton];
   [verificationSendButton setTitle:@"发送验证码" forState:UIControlStateNormal];
   verificationSendButton.titleLabel.font = [UIFont systemFontOfSize:14];
   [verificationSendButton setTitleColor:AEColor(126, 53, 150, 1) forState:UIControlStateNormal];
   [verificationSendButton constrainWidth:@"100" height:@"35"];
   verificationSendButton.layer.borderColor = AEColor(126, 53, 150, 1).CGColor;
   verificationSendButton.layer.borderWidth = 1;
-  [verificationStackView addArrangedSubview:verificationSendButton];
+  [verificationSendButton addTarget:self action:@selector(sendVerificationAction) forControlEvents:UIControlEventTouchUpInside];
 
   UIStackView *bottomStackView = [[UIStackView alloc] init];
   [unbindView addSubview:bottomStackView];
@@ -368,6 +370,7 @@
 }
 
 -(void)hideMaskView{
+  [self cancelTimeCount];
   [maskView removeFromSuperview];
   maskView = nil;
 }

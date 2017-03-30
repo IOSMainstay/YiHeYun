@@ -102,7 +102,6 @@
 		811B51041E8AB39200A7C717 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51031E8AB39200A7C717 /* SettingVC.m */; };
 		811B51071E8AB48C00A7C717 /* HealthRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51061E8AB48C00A7C717 /* HealthRecordVC.m */; };
 		811B510A1E8AB49B00A7C717 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51091E8AB49B00A7C717 /* FriendsVC.m */; };
-		811B510D1E8AB4BE00A7C717 /* ContactUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B510C1E8AB4BE00A7C717 /* ContactUsVC.m */; };
 		811B51101E8AB4D900A7C717 /* FeedbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B510F1E8AB4D900A7C717 /* FeedbackVC.m */; };
 		811B51131E8AB58500A7C717 /* AddCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51121E8AB58500A7C717 /* AddCaseVC.m */; };
 		811B51161E8AB61500A7C717 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51151E8AB61500A7C717 /* HelpVC.m */; };
@@ -294,8 +293,6 @@
 		811B51061E8AB48C00A7C717 /* HealthRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordVC.m; sourceTree = "<group>"; };
 		811B51081E8AB49B00A7C717 /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
 		811B51091E8AB49B00A7C717 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
-		811B510B1E8AB4BE00A7C717 /* ContactUsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsVC.h; sourceTree = "<group>"; };
-		811B510C1E8AB4BE00A7C717 /* ContactUsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsVC.m; sourceTree = "<group>"; };
 		811B510E1E8AB4D900A7C717 /* FeedbackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackVC.h; sourceTree = "<group>"; };
 		811B510F1E8AB4D900A7C717 /* FeedbackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackVC.m; sourceTree = "<group>"; };
 		811B51111E8AB58500A7C717 /* AddCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCaseVC.h; sourceTree = "<group>"; };
@@ -819,8 +816,6 @@
 				811B51061E8AB48C00A7C717 /* HealthRecordVC.m */,
 				811B51081E8AB49B00A7C717 /* FriendsVC.h */,
 				811B51091E8AB49B00A7C717 /* FriendsVC.m */,
-				811B510B1E8AB4BE00A7C717 /* ContactUsVC.h */,
-				811B510C1E8AB4BE00A7C717 /* ContactUsVC.m */,
 				811B510E1E8AB4D900A7C717 /* FeedbackVC.h */,
 				811B510F1E8AB4D900A7C717 /* FeedbackVC.m */,
 				811B51111E8AB58500A7C717 /* AddCaseVC.h */,
@@ -1006,7 +1001,6 @@
 				207243071E62C2FB00783CD4 /* BottomLineView.m in Sources */,
 				207243311E62C34800783CD4 /* UILabel+Add.m in Sources */,
 				207242FA1E62C2FB00783CD4 /* PGIndexBannerSubiew.m in Sources */,
-				811B510D1E8AB4BE00A7C717 /* ContactUsVC.m in Sources */,
 				2072431A1E62C2FB00783CD4 /* AEUITextField.m in Sources */,
 				2072433F1E62C9F500783CD4 /* BaseVC.m in Sources */,
 				207242F01E62C2FB00783CD4 /* AEFilePath.m in Sources */,
