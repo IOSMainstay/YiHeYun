@@ -108,6 +108,7 @@
 		811B51191E8AB62F00A7C717 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51181E8AB62F00A7C717 /* AboutUsVC.m */; };
 		811B511C1E8AB68200A7C717 /* AboutMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511B1E8AB68200A7C717 /* AboutMemberVC.m */; };
 		811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */; };
+		81FE9BF31E8CEE100068582F /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9BF21E8CEE100068582F /* UIButton+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -305,6 +306,8 @@
 		811B511B1E8AB68200A7C717 /* AboutMemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMemberVC.m; sourceTree = "<group>"; };
 		811B511D1E8B7A6F00A7C717 /* LeaveMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveMessageVC.h; sourceTree = "<group>"; };
 		811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveMessageVC.m; sourceTree = "<group>"; };
+		81FE9BF11E8CEE100068582F /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		81FE9BF21E8CEE100068582F /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YiHeYun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -504,6 +507,8 @@
 				2072432E1E62C34800783CD4 /* UITabBar+BadgeValue.m */,
 				20939B771E8880BA00012664 /* UIImage+GradientColor.h */,
 				20939B781E8880BA00012664 /* UIImage+GradientColor.m */,
+				81FE9BF11E8CEE100068582F /* UIButton+Extension.h */,
+				81FE9BF21E8CEE100068582F /* UIButton+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1048,6 +1053,7 @@
 				207243021E62C2FB00783CD4 /* TapImageView.m in Sources */,
 				207242451E62B97100783CD4 /* ViewController.m in Sources */,
 				207243301E62C34800783CD4 /* UIImage+Additions.m in Sources */,
+				81FE9BF31E8CEE100068582F /* UIButton+Extension.m in Sources */,
 				044AC4FA1E6FDFEE00EE43E3 /* LoginVC.m in Sources */,
 				207243171E62C2FB00783CD4 /* StarRatingView.m in Sources */,
 				811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */,
