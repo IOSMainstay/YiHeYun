@@ -9,8 +9,14 @@
 #import "MineVC.h"
 
 @interface MineVC ()<UITableViewDataSource, UITableViewDelegate>
+{
+  UIView *maskView;
+  UITextField *verificationTextField;
+  UIButton *verificationSendButton;
+}
 
 @property (nonatomic, strong) NSArray *performSegues;
+@property (nonatomic, strong) NSString *phoneNumber;
 
 @end
 
@@ -115,11 +121,11 @@
     stateLab.textAlignment = NSTextAlignmentRight;
     [cell.contentView addSubview:stateLab];
 
-    cell.textLabel.text = @"智能水表";
+    cell.textLabel.text = @"智能手表";
 
   } else if (indexPath.section==1&&indexPath.row==1) {
     UIButton *addCaseBtn = [[UIButton alloc]initWithFrame:CGRectMake(30, 10, WIDTH-60, 40)];
-    //        [addCaseBtn setBackgroundImage:[UIImage imageNamed:@"icon-通用按钮"] forState:UIControlStateNormal];
+
     [addCaseBtn setTitle:@"添加病历" forState:UIControlStateNormal];
     [addCaseBtn setTitleColor:[UIColor colorWithRed:126/255.0 green:53/255.0 blue:150/255.0 alpha:1] forState:UIControlStateNormal];
     addCaseBtn.layer.borderWidth = 1;
@@ -217,7 +223,7 @@
 
   } else if (indexPath.section == 1) {
     if (indexPath.row == 0) {
-
+      [self showMaskView];
     } else if (indexPath.row == 1) {
 
     } else {
@@ -254,6 +260,118 @@
   }
   return _performSegues;
 }
+
+-(NSString *)phoneNumber{
+  return @"13300005181";
+}
+
+-(void)sendVerificationAction {
+
+}
+
+-(void)showMaskView{
+  [self hideMaskView];
+
+  maskView = [[UIView alloc] init];
+  [self.view addSubview:maskView];
+  [maskView alignToView:self.view];
+  maskView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
+
+  UIView *unbindView = [[UIView alloc] init];
+  [maskView addSubview:unbindView];
+
+  [unbindView alignCenterYWithView:maskView predicate:@"-100"];
+  [unbindView alignLeading:@"15" trailing:@"-15" toView:maskView];
+  [unbindView constrainHeight:@"220"];
+  unbindView.layer.cornerRadius = 5;
+  unbindView.layer.masksToBounds = true;
+  unbindView.backgroundColor = [UIColor whiteColor];
+
+  UILabel *titleLabel = [[UILabel alloc] init];
+  [unbindView addSubview:titleLabel];
+  [titleLabel alignLeading:@"0" trailing:@"0" toView:unbindView];
+  [titleLabel alignTopEdgeWithView:unbindView predicate:@"0"];
+  [titleLabel constrainHeight:@"45"];
+  titleLabel.text = @"解绑智能手表";
+  titleLabel.textColor = [UIColor whiteColor];
+  titleLabel.backgroundColor = AEColor(126, 53, 150, 1);
+  titleLabel.textAlignment = NSTextAlignmentCenter;
+
+  UILabel *detailLabel = [[UILabel alloc] init];
+  [unbindView addSubview:detailLabel];
+  [detailLabel alignLeading:@"0" trailing:@"0" toView:unbindView];
+  [detailLabel constrainTopSpaceToView:titleLabel predicate:@"0"];
+  [detailLabel constrainHeight:@"63"];
+  if (self.phoneNumber.length == 11) {
+    detailLabel.text = [NSString stringWithFormat:@"请输入尾号%@的手机收到的验证码",[self.phoneNumber substringWithRange:NSMakeRange(7, 4)]];
+  }
+  detailLabel.textColor = [UIColor darkGrayColor];
+  detailLabel.font = [UIFont systemFontOfSize:14];
+  detailLabel.textAlignment = NSTextAlignmentCenter;
+
+  UIStackView *verificationStackView = [[UIStackView alloc] init];
+  [unbindView addSubview:verificationStackView];
+  [verificationStackView alignCenterXWithView:unbindView predicate:@"0"];
+  [verificationStackView setAxis:UILayoutConstraintAxisHorizontal];
+  [verificationStackView constrainTopSpaceToView:detailLabel predicate:@"10"];
+  [verificationStackView setSpacing:30];
+
+  verificationTextField = [[UITextField alloc] init];
+  [verificationTextField constrainWidth:@"100" height:@"35"];
+  verificationTextField.textAlignment = NSTextAlignmentCenter;
+  verificationTextField.layer.borderColor = [UIColor lightGrayColor].CGColor;
+  verificationTextField.layer.borderWidth = 1;
+  [verificationStackView addArrangedSubview:verificationTextField];
+
+  verificationSendButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  [verificationSendButton setTitle:@"发送验证码" forState:UIControlStateNormal];
+  verificationSendButton.titleLabel.font = [UIFont systemFontOfSize:14];
+  [verificationSendButton setTitleColor:AEColor(126, 53, 150, 1) forState:UIControlStateNormal];
+  [verificationSendButton constrainWidth:@"100" height:@"35"];
+  verificationSendButton.layer.borderColor = AEColor(126, 53, 150, 1).CGColor;
+  verificationSendButton.layer.borderWidth = 1;
+  [verificationStackView addArrangedSubview:verificationSendButton];
+
+  UIStackView *bottomStackView = [[UIStackView alloc] init];
+  [unbindView addSubview:bottomStackView];
+  [bottomStackView alignCenterXWithView:unbindView predicate:@"0"];
+  [bottomStackView setAxis:UILayoutConstraintAxisHorizontal];
+  [bottomStackView alignLeading:@"0" trailing:@"0" toView:unbindView];
+  [bottomStackView alignBottomEdgeWithView:unbindView predicate:@"0"];
+  [bottomStackView setSpacing:0];
+
+  UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  [bottomStackView addArrangedSubview:cancelButton];
+  [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+  cancelButton.titleLabel.font = [UIFont systemFontOfSize:12];
+  [cancelButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+  [cancelButton constrainHeight:@"45"];
+  [cancelButton constrainWidthToView:unbindView predicate:@"*.5"];
+  cancelButton.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+  [cancelButton addTarget:self action:@selector(hideMaskView) forControlEvents:UIControlEventTouchUpInside];
+
+  UIButton *confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
+  [bottomStackView addArrangedSubview:confirmButton];
+  [confirmButton setTitle:@"确定" forState:UIControlStateNormal];
+  confirmButton.titleLabel.font = [UIFont systemFontOfSize:12];
+  [confirmButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+  [confirmButton constrainHeight:@"45"];
+  [confirmButton constrainWidthToView:unbindView predicate:@"*.5"];
+  confirmButton.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+  [confirmButton addTarget:self action:@selector(hideMaskView) forControlEvents:UIControlEventTouchUpInside];
+
+  UIView *splitLine = [[UIView alloc] init];
+  [unbindView addSubview:splitLine];
+  [splitLine alignCenterWithView:bottomStackView];
+  [splitLine constrainWidth:@"0.5" height:@"25"];
+  splitLine.backgroundColor = [UIColor lightGrayColor];
+}
+
+-(void)hideMaskView{
+  [maskView removeFromSuperview];
+  maskView = nil;
+}
+
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
   return UIStatusBarStyleLightContent;

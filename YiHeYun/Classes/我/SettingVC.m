@@ -45,12 +45,13 @@
 
 -(void)logoutAction {
   // @TODO: <# describe #>
+
 }
 
 #pragma mark -UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 6;
+  return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,7 +71,6 @@
   cell.detailTextLabel.text = self.dataSource[indexPath.row][@"message"];
 
   imageStackView = nil;
-
   if ( indexPath.row == 3 ) {
     imageStackView = [[UIStackView alloc] init];
     [cell addSubview:imageStackView];
@@ -79,12 +79,12 @@
     [imageStackView setAxis:UILayoutConstraintAxisHorizontal];
     [imageStackView setSpacing:10];
 
+    NSArray *imageNames = self.dataSource[indexPath.row][@"imageNames"];
     for (int index = 0; index <= 1; index++) {
       UIImageView *iconImage = [[UIImageView alloc]init];
+      [iconImage setContentMode:UIViewContentModeScaleAspectFit];
       [iconImage constrainWidth:@"40" height:@"40"];
-      iconImage.layer.cornerRadius = 20;
-      iconImage.layer.masksToBounds = true;
-      iconImage.backgroundColor = [UIColor grayColor];
+      iconImage.image = [UIImage imageNamed:imageNames[index]];
       [imageStackView addArrangedSubview:iconImage];
     }
   }
@@ -101,10 +101,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  if (indexPath.section == 1&&indexPath.row == 1) {
-    return 60;
-  }
-
   return 44;
 }
 
@@ -115,10 +111,9 @@
       
       break;
 
-    case 2 : case 5:
+    case 2: case 5:
       [self performSegueWithIdentifier:self.self.dataSource[indexPath.row][@"segue"] sender:nil];
       break;
-
 
     default:
       break;
@@ -132,14 +127,18 @@
   destinatVC.navigationController.navigationBar.hidden = false;
 }
 
--(NSArray *)dataSource {
+-(NSArray *) dataSource {
   if (!_dataSource) {
-    _dataSource = @[@{@"title":@"登录手机",@"message":@"188****8888",@"segue":@""},
-                    @{@"title":@"修改密码",@"message":@"",@"segue":@""},
-                    @{@"title":@"关于我们",@"message":@"",@"segue":@"aboutUsSegue"},
-                    @{@"title":@"分享",@"message":@"",@"segue":@""},
-                    @{@"title":@"检查更新",@"message":@"云健康V1.0.1",@"segue":@""},
-                    @{@"title":@"使用帮助",@"message":@"",@"segue":@"helpSegue"},];
+    NSString *versionStr = [NSString stringWithFormat:@"云健康V%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    NSString *telNumber = @"18888888888";
+
+    NSString *telStr = [telNumber stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+    _dataSource = @[@{@"title":@"登录手机",@"message":telStr,    @"segue":@""},
+                    @{@"title":@"修改密码",@"message":@"",       @"segue":@""},
+                    @{@"title":@"关于我们",@"message":@"",       @"segue":@"aboutUsSegue"},
+                    @{@"title":@"分享",   @"message":@"",       @"imageNames":@[@"test_pengyouquan",@"test_pengyouquan"]},
+                    @{@"title":@"检查更新",@"message":versionStr,@"segue":@""},
+                    @{@"title":@"使用帮助",@"message":@"",       @"segue":@"helpSegue"},];
   }
   return _dataSource;
 }
