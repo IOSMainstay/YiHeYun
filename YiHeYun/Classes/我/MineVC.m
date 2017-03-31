@@ -7,6 +7,7 @@
 //
 
 #import "MineVC.h"
+#import "PersonInfoVC.h"
 
 @interface MineVC ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -44,6 +45,9 @@
   UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, WIDTH/1.8)];
   headerView.backgroundColor = [UIColor colorWithRed:126/255.0 green:53/255.0 blue:150/255.0 alpha:1];
   tableView.tableHeaderView = headerView;
+    
+    UITapGestureRecognizer *headerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(myInfo)];
+    [headerView addGestureRecognizer:headerTap];
 
   UILabel *mineLab = [[UILabel alloc]initWithFrame:CGRectMake((WIDTH-20)/2, 20, 20, 20)];
   mineLab.text = @"我";
@@ -63,6 +67,13 @@
   mineNameLab.textAlignment = NSTextAlignmentCenter;
   mineNameLab.font = [UIFont systemFontOfSize:30];
   [headerView addSubview:mineNameLab];
+}
+
+//我的信息页面
+- (void)myInfo {
+    PersonInfoVC *vc = [[PersonInfoVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark -UITableViewDataSource

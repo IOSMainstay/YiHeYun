@@ -37,6 +37,11 @@
 		201CA26E1E7571DC00E7DFE7 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA26D1E7571DC00E7DFE7 /* RegisterVC.m */; };
 		201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2701E7571F400E7DFE7 /* ForgetPswVC.m */; };
 		201CA2741E75805300E7DFE7 /* SetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2731E75805300E7DFE7 /* SetPswVC.m */; };
+		205788681E8E431B00885791 /* EditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057885F1E8E431B00885791 /* EditVC.m */; };
+		205788691E8E431B00885791 /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788611E8E431B00885791 /* InfoTableViewCell.m */; };
+		2057886A1E8E431B00885791 /* PersonInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788631E8E431B00885791 /* PersonInfoVC.m */; };
+		2057886B1E8E431B00885791 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 205788651E8E431B00885791 /* address.plist */; };
+		2057886C1E8E431B00885791 /* SkyerCityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788671E8E431B00885791 /* SkyerCityPicker.m */; };
 		2071EF1E1E74F82C001020D7 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2071EF1D1E74F82C001020D7 /* NetworkManager.m */; };
 		2071EF211E74F850001020D7 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2071EF201E74F850001020D7 /* UserInfo.m */; };
 		2072423F1E62B97100783CD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072423E1E62B97100783CD4 /* main.m */; };
@@ -171,6 +176,15 @@
 		201CA2701E7571F400E7DFE7 /* ForgetPswVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPswVC.m; sourceTree = "<group>"; };
 		201CA2721E75805300E7DFE7 /* SetPswVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPswVC.h; sourceTree = "<group>"; };
 		201CA2731E75805300E7DFE7 /* SetPswVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPswVC.m; sourceTree = "<group>"; };
+		2057885E1E8E431B00885791 /* EditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVC.h; sourceTree = "<group>"; };
+		2057885F1E8E431B00885791 /* EditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVC.m; sourceTree = "<group>"; };
+		205788601E8E431B00885791 /* InfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
+		205788611E8E431B00885791 /* InfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		205788621E8E431B00885791 /* PersonInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoVC.h; sourceTree = "<group>"; };
+		205788631E8E431B00885791 /* PersonInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoVC.m; sourceTree = "<group>"; };
+		205788651E8E431B00885791 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
+		205788661E8E431B00885791 /* SkyerCityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyerCityPicker.h; sourceTree = "<group>"; };
+		205788671E8E431B00885791 /* SkyerCityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyerCityPicker.m; sourceTree = "<group>"; };
 		2071EF1C1E74F82C001020D7 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		2071EF1D1E74F82C001020D7 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		2071EF1F1E74F850001020D7 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
@@ -408,6 +422,30 @@
 				609D179F597C6764A723B63F /* Pods-YiHeYun.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2057885D1E8E430500885791 /* 个人信息 */ = {
+			isa = PBXGroup;
+			children = (
+				205788641E8E431B00885791 /* SkyerCityPicker */,
+				2057885E1E8E431B00885791 /* EditVC.h */,
+				2057885F1E8E431B00885791 /* EditVC.m */,
+				205788601E8E431B00885791 /* InfoTableViewCell.h */,
+				205788611E8E431B00885791 /* InfoTableViewCell.m */,
+				205788621E8E431B00885791 /* PersonInfoVC.h */,
+				205788631E8E431B00885791 /* PersonInfoVC.m */,
+			);
+			path = "个人信息";
+			sourceTree = "<group>";
+		};
+		205788641E8E431B00885791 /* SkyerCityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				205788651E8E431B00885791 /* address.plist */,
+				205788661E8E431B00885791 /* SkyerCityPicker.h */,
+				205788671E8E431B00885791 /* SkyerCityPicker.m */,
+			);
+			path = SkyerCityPicker;
 			sourceTree = "<group>";
 		};
 		207242311E62B97100783CD4 = {
@@ -813,6 +851,7 @@
 		207243451E62CE0600783CD4 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				2057885D1E8E430500885791 /* 个人信息 */,
 				044AC5041E6FE18400EE43E3 /* MineVC.h */,
 				044AC5051E6FE18400EE43E3 /* MineVC.m */,
 				811B51021E8AB39200A7C717 /* SettingVC.h */,
@@ -917,6 +956,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				207242FD1E62C2FB00783CD4 /* Sparkle.png in Resources */,
+				2057886B1E8E431B00885791 /* address.plist in Resources */,
 				207243151E62C2FB00783CD4 /* star_full@2x.png in Resources */,
 				2072430C1E62C2FB00783CD4 /* sline_@3x.png in Resources */,
 				2072430B1E62C2FB00783CD4 /* sline_@2x.png in Resources */,
@@ -1013,6 +1053,7 @@
 				0434E1BD1E7277450088D533 /* ZSPickView.m in Sources */,
 				207242F21E62C2FB00783CD4 /* AEMoreView.m in Sources */,
 				207242F91E62C2FB00783CD4 /* NewPagedFlowView.m in Sources */,
+				205788691E8E431B00885791 /* InfoTableViewCell.m in Sources */,
 				044AC5121E6FFB3100EE43E3 /* BloodSugarSetVC.m in Sources */,
 				811B51161E8AB61500A7C717 /* HelpVC.m in Sources */,
 				207243041E62C2FB00783CD4 /* JHHJAnimation.m in Sources */,
@@ -1034,6 +1075,7 @@
 				2072432F1E62C34800783CD4 /* UIImage+Color.m in Sources */,
 				207243191E62C2FB00783CD4 /* AEButton.m in Sources */,
 				207243001E62C2FB00783CD4 /* ImgLargeScrollView.m in Sources */,
+				205788681E8E431B00885791 /* EditVC.m in Sources */,
 				044AC4FD1E6FE12100EE43E3 /* HomeVC.m in Sources */,
 				811B51041E8AB39200A7C717 /* SettingVC.m in Sources */,
 				04AEAA631E7783A0008112D8 /* UrgentCallVC.m in Sources */,
@@ -1041,6 +1083,7 @@
 				044AC5151E6FFBA700EE43E3 /* HeartRateSetVC.m in Sources */,
 				207243181E62C2FB00783CD4 /* AEToast.m in Sources */,
 				20E3E3971E894E3E00FC8A72 /* ZBPieView.m in Sources */,
+				2057886C1E8E431B00885791 /* SkyerCityPicker.m in Sources */,
 				04AEAA821E7792DC008112D8 /* SDCollectionViewCell.m in Sources */,
 				04AEAA811E7792DC008112D8 /* TAPageControl.m in Sources */,
 				207242FF1E62C2FB00783CD4 /* ImageViewer.m in Sources */,
@@ -1069,6 +1112,7 @@
 				044AC5061E6FE18400EE43E3 /* MineVC.m in Sources */,
 				207243321E62C34800783CD4 /* UIView+Animation.m in Sources */,
 				207243391E62C85900783CD4 /* ZBAlertView.m in Sources */,
+				2057886A1E8E431B00885791 /* PersonInfoVC.m in Sources */,
 				04AEAA801E7792DC008112D8 /* TADotView.m in Sources */,
 				207243081E62C2FB00783CD4 /* OptionBarController.m in Sources */,
 				2072423F1E62B97100783CD4 /* main.m in Sources */,
