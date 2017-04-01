@@ -386,7 +386,7 @@
         <!--设置密码-->
         <scene sceneID="fHZ-24-piV">
             <objects>
-                <viewController id="Czq-Lm-b5u" customClass="SetPswVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetPswVC" id="Czq-Lm-b5u" customClass="SetPswVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="62c-xq-3Tt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -195,7 +195,7 @@
 {
   switch (indexPath.row) {
     case 1:
-
+      [self setPsw];
       break;
 
     case 2: case 5:
@@ -209,6 +209,13 @@
     default:
       break;
   }
+}
+
+- (void)setPsw {
+  SetPswVC *vc = [SetPswVC storyboardInstance];
+  vc.hidesBottomBarWhenPushed = YES;
+  [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
