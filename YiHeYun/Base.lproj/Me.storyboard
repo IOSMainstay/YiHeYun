@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mu7-8l-aJx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mu7-8l-aJx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -236,6 +236,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="朋友" id="2qU-5f-NNE"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="4C0-cL-WuN" kind="show" identifier="addFriendSegue" id="Old-g7-bIl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8zr-vo-wna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kj7-wV-4Qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2118" y="-265"/>
+            <point key="canvasLocation" x="2118" y="-325"/>
         </scene>
         <!--意见反馈-->
         <scene sceneID="L33-lA-3HU">
@@ -304,6 +307,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cd-M0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2118" y="2385"/>
+        </scene>
+        <!--健康档案-->
+        <scene sceneID="Xxn-SD-Mb7">
+            <objects>
+                <viewController title="健康档案" id="4C0-cL-WuN" customClass="AddFriendVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7DF-4C-GgA"/>
+                        <viewControllerLayoutGuide type="bottom" id="39N-JT-Jpz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7nk-mb-dft">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="添加朋友" id="rUA-9r-zwi"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7I-Qu-BNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2862" y="394"/>
         </scene>
     </scenes>
 </document>

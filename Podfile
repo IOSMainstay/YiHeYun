@@ -14,5 +14,6 @@ pod 'FXBlurView', '~> 1.6.4'
 pod 'JPush-iOS-SDK', '~> 2.1.9'
 pod 'RestKit'
 pod 'FLKAutoLayout'
+pod 'DZNEmptyDataSet'
 
 end

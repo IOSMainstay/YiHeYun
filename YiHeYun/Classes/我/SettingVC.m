@@ -144,37 +144,35 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   UITableViewCell *cell =nil;
-  static NSString *identifer = @"cell";
+  static NSString *identifer = @"settingVC_Cell";
   cell = [tableView dequeueReusableCellWithIdentifier:identifer];
-  UIStackView *imageStackView ;
   if (! cell) {
     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifer];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
+    if ( indexPath.row == 3 ) {
+      UIStackView *imageStackView = [[UIStackView alloc] init];
+      [cell addSubview:imageStackView];
+      [imageStackView alignTrailingEdgeWithView:cell predicate:@"-35"];
+      [imageStackView alignCenterYWithView:cell predicate:@"0"];
+      [imageStackView setAxis:UILayoutConstraintAxisHorizontal];
+      [imageStackView setSpacing:10];
+
+      NSArray *imageNames = self.dataSource[indexPath.row][@"imageNames"];
+      for (int index = 0; index < imageNames.count; index++) {
+        UIImageView *iconImage = [[UIImageView alloc]init];
+        [imageStackView addArrangedSubview:iconImage];
+        [iconImage setContentMode:UIViewContentModeScaleAspectFit];
+        [iconImage constrainWidth:@"30" height:@"30"];
+        iconImage.image = [UIImage imageNamed:imageNames[index]];
+      }
+    }
   }
 
   cell.textLabel.font = [UIFont systemFontOfSize:15];
   cell.textLabel.text = self.dataSource[indexPath.row][@"title"];
   cell.detailTextLabel.text = self.dataSource[indexPath.row][@"message"];
-
-  imageStackView = nil;
-  if ( indexPath.row == 3 ) {
-    imageStackView = [[UIStackView alloc] init];
-    [cell addSubview:imageStackView];
-    [imageStackView alignTrailingEdgeWithView:cell predicate:@"-35"];
-    [imageStackView alignCenterYWithView:cell predicate:@"0"];
-    [imageStackView setAxis:UILayoutConstraintAxisHorizontal];
-    [imageStackView setSpacing:10];
-
-    NSArray *imageNames = self.dataSource[indexPath.row][@"imageNames"];
-    for (int index = 0; index <= 1; index++) {
-      UIImageView *iconImage = [[UIImageView alloc]init];
-      [iconImage setContentMode:UIViewContentModeScaleAspectFit];
-      [iconImage constrainWidth:@"30" height:@"30"];
-      iconImage.image = [UIImage imageNamed:imageNames[index]];
-      [imageStackView addArrangedSubview:iconImage];
-    }
-  }
 
   return cell;
 }
@@ -199,7 +197,7 @@
       break;
 
     case 2: case 5:
-      [self performSegueWithIdentifier:self.self.dataSource[indexPath.row][@"segue"] sender:nil];
+      [self performSegueWithIdentifier:self.dataSource[indexPath.row][@"segue"] sender:nil];
       break;
 
     case 3:// share
@@ -222,7 +220,6 @@
 
   UIViewController *destinatVC = segue.destinationViewController;
   destinatVC.hidesBottomBarWhenPushed = true;
-  destinatVC.navigationController.navigationBar.hidden = false;
 }
 
 -(NSArray *) dataSource {

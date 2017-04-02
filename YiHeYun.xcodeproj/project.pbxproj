@@ -106,13 +106,14 @@
 		811B51011E8A8BDC00A7C717 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811B50FF1E8A8BDC00A7C717 /* Me.storyboard */; };
 		811B51041E8AB39200A7C717 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51031E8AB39200A7C717 /* SettingVC.m */; };
 		811B51071E8AB48C00A7C717 /* HealthRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51061E8AB48C00A7C717 /* HealthRecordVC.m */; };
-		811B510A1E8AB49B00A7C717 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51091E8AB49B00A7C717 /* FriendsVC.m */; };
 		811B51101E8AB4D900A7C717 /* FeedbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B510F1E8AB4D900A7C717 /* FeedbackVC.m */; };
 		811B51131E8AB58500A7C717 /* AddCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51121E8AB58500A7C717 /* AddCaseVC.m */; };
 		811B51161E8AB61500A7C717 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51151E8AB61500A7C717 /* HelpVC.m */; };
 		811B51191E8AB62F00A7C717 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51181E8AB62F00A7C717 /* AboutUsVC.m */; };
 		811B511C1E8AB68200A7C717 /* AboutMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511B1E8AB68200A7C717 /* AboutMemberVC.m */; };
 		811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */; };
+		81BB7A001E90961F00BED061 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BB79FF1E90961F00BED061 /* FriendsVC.m */; };
+		81BB7A031E90980600BED061 /* AddFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BB7A021E90980600BED061 /* AddFriendVC.m */; };
 		81FE9BF31E8CEE100068582F /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9BF21E8CEE100068582F /* UIButton+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -306,8 +307,6 @@
 		811B51031E8AB39200A7C717 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		811B51051E8AB48C00A7C717 /* HealthRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordVC.h; sourceTree = "<group>"; };
 		811B51061E8AB48C00A7C717 /* HealthRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordVC.m; sourceTree = "<group>"; };
-		811B51081E8AB49B00A7C717 /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
-		811B51091E8AB49B00A7C717 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
 		811B510E1E8AB4D900A7C717 /* FeedbackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackVC.h; sourceTree = "<group>"; };
 		811B510F1E8AB4D900A7C717 /* FeedbackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackVC.m; sourceTree = "<group>"; };
 		811B51111E8AB58500A7C717 /* AddCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCaseVC.h; sourceTree = "<group>"; };
@@ -320,6 +319,10 @@
 		811B511B1E8AB68200A7C717 /* AboutMemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMemberVC.m; sourceTree = "<group>"; };
 		811B511D1E8B7A6F00A7C717 /* LeaveMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveMessageVC.h; sourceTree = "<group>"; };
 		811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveMessageVC.m; sourceTree = "<group>"; };
+		81BB79FE1E90961F00BED061 /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
+		81BB79FF1E90961F00BED061 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
+		81BB7A011E90980600BED061 /* AddFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendVC.h; sourceTree = "<group>"; };
+		81BB7A021E90980600BED061 /* AddFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendVC.m; sourceTree = "<group>"; };
 		81FE9BF11E8CEE100068582F /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		81FE9BF21E8CEE100068582F /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YiHeYun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -851,6 +854,7 @@
 		207243451E62CE0600783CD4 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				81BB79FD1E90958200BED061 /* 朋友 */,
 				2057885D1E8E430500885791 /* 个人信息 */,
 				044AC5041E6FE18400EE43E3 /* MineVC.h */,
 				044AC5051E6FE18400EE43E3 /* MineVC.m */,
@@ -858,10 +862,8 @@
 				811B51031E8AB39200A7C717 /* SettingVC.m */,
 				811B51051E8AB48C00A7C717 /* HealthRecordVC.h */,
 				811B51061E8AB48C00A7C717 /* HealthRecordVC.m */,
-				811B51081E8AB49B00A7C717 /* FriendsVC.h */,
-				811B51091E8AB49B00A7C717 /* FriendsVC.m */,
-				811B510E1E8AB4D900A7C717 /* FeedbackVC.h */,
 				811B510F1E8AB4D900A7C717 /* FeedbackVC.m */,
+				811B510E1E8AB4D900A7C717 /* FeedbackVC.h */,
 				811B51111E8AB58500A7C717 /* AddCaseVC.h */,
 				811B51121E8AB58500A7C717 /* AddCaseVC.m */,
 				811B51141E8AB61500A7C717 /* HelpVC.h */,
@@ -891,6 +893,17 @@
 				D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81BB79FD1E90958200BED061 /* 朋友 */ = {
+			isa = PBXGroup;
+			children = (
+				81BB79FE1E90961F00BED061 /* FriendsVC.h */,
+				81BB79FF1E90961F00BED061 /* FriendsVC.m */,
+				81BB7A011E90980600BED061 /* AddFriendVC.h */,
+				81BB7A021E90980600BED061 /* AddFriendVC.m */,
+			);
+			path = "朋友";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1074,6 +1087,7 @@
 				207242FC1E62C2FB00783CD4 /* AEEmitterButton.m in Sources */,
 				2072432F1E62C34800783CD4 /* UIImage+Color.m in Sources */,
 				207243191E62C2FB00783CD4 /* AEButton.m in Sources */,
+				81BB7A031E90980600BED061 /* AddFriendVC.m in Sources */,
 				207243001E62C2FB00783CD4 /* ImgLargeScrollView.m in Sources */,
 				205788681E8E431B00885791 /* EditVC.m in Sources */,
 				044AC4FD1E6FE12100EE43E3 /* HomeVC.m in Sources */,
@@ -1107,10 +1121,10 @@
 				207243361E62C34800783CD4 /* UITabBar+BadgeValue.m in Sources */,
 				044AC50F1E6FF82A00EE43E3 /* StupCountSetVC.m in Sources */,
 				044AC5001E6FE13B00EE43E3 /* FindVC.m in Sources */,
-				811B510A1E8AB49B00A7C717 /* FriendsVC.m in Sources */,
 				811B511C1E8AB68200A7C717 /* AboutMemberVC.m in Sources */,
 				044AC5061E6FE18400EE43E3 /* MineVC.m in Sources */,
 				207243321E62C34800783CD4 /* UIView+Animation.m in Sources */,
+				81BB7A001E90961F00BED061 /* FriendsVC.m in Sources */,
 				207243391E62C85900783CD4 /* ZBAlertView.m in Sources */,
 				2057886A1E8E431B00885791 /* PersonInfoVC.m in Sources */,
 				04AEAA801E7792DC008112D8 /* TADotView.m in Sources */,
