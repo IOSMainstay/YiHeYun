@@ -38,6 +38,7 @@
 		201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2701E7571F400E7DFE7 /* ForgetPswVC.m */; };
 		201CA2741E75805300E7DFE7 /* SetPswVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CA2731E75805300E7DFE7 /* SetPswVC.m */; };
 		204E0AE41E93DDC70031C01D /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204E0AE31E93DDC70031C01D /* AMapLocationKit.framework */; };
+		204E0AE71E93EAEE0031C01D /* PanSingleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E0AE61E93EAEE0031C01D /* PanSingleProgressView.m */; };
 		205788681E8E431B00885791 /* EditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2057885F1E8E431B00885791 /* EditVC.m */; };
 		205788691E8E431B00885791 /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788611E8E431B00885791 /* InfoTableViewCell.m */; };
 		2057886A1E8E431B00885791 /* PersonInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788631E8E431B00885791 /* PersonInfoVC.m */; };
@@ -197,6 +198,8 @@
 		201CA2721E75805300E7DFE7 /* SetPswVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPswVC.h; sourceTree = "<group>"; };
 		201CA2731E75805300E7DFE7 /* SetPswVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPswVC.m; sourceTree = "<group>"; };
 		204E0AE31E93DDC70031C01D /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		204E0AE51E93EAEE0031C01D /* PanSingleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanSingleProgressView.h; sourceTree = "<group>"; };
+		204E0AE61E93EAEE0031C01D /* PanSingleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanSingleProgressView.m; sourceTree = "<group>"; };
 		2057885E1E8E431B00885791 /* EditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVC.h; sourceTree = "<group>"; };
 		2057885F1E8E431B00885791 /* EditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVC.m; sourceTree = "<group>"; };
 		205788601E8E431B00885791 /* InfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
@@ -404,6 +407,8 @@
 				0448F8771E7645EA002FE5D3 /* SelectDateView.m */,
 				0434E1C41E729C660088D533 /* PanProgressView.h */,
 				0434E1C51E729C660088D533 /* PanProgressView.m */,
+				204E0AE51E93EAEE0031C01D /* PanSingleProgressView.h */,
+				204E0AE61E93EAEE0031C01D /* PanSingleProgressView.m */,
 				0434E1BE1E728CC00088D533 /* SelectTimeView.h */,
 				0434E1BF1E728CC00088D533 /* SelectTimeView.m */,
 				0434E1BB1E7277450088D533 /* ZSPickView.h */,
@@ -1167,6 +1172,7 @@
 				207243341E62C34800783CD4 /* NSDictionary+DeleteNULL.m in Sources */,
 				2072431E1E62C2FB00783CD4 /* Utils.m in Sources */,
 				044AC5181E6FFBBD00EE43E3 /* BloodPressureSetVC.m in Sources */,
+				204E0AE71E93EAEE0031C01D /* PanSingleProgressView.m in Sources */,
 				04AEAA831E7792DC008112D8 /* SDCycleScrollView.m in Sources */,
 				207243331E62C34800783CD4 /* UIView+Extension.m in Sources */,
 				207243351E62C34800783CD4 /* UITabBar+RedPoint.m in Sources */,

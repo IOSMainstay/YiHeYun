@@ -10,6 +10,7 @@
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import <MAMapKit/MAMapKit.h>
 #import <AMapLocationKit/AMapLocationManager.h>
+#import "PanSingleProgressView.h"
 
 @interface ElecFenceVC ()<MAMapViewDelegate,AMapLocationManagerDelegate>
 {
@@ -22,7 +23,9 @@
 @property (nonatomic,retain) CLLocation *userLocation; //用户当前的位置
 @property (nonatomic,assign) CLLocationCoordinate2D userTapLocation; //用户点击地图位置
 @property (nonatomic,retain) MACircle *currentCircle; //当前电子围栏
+@property (nonatomic,retain) PanSingleProgressView *radiusPanView; //设置半径
 @property (nonatomic, strong) NSMutableArray *circles;
+@property (nonatomic, assign) int radiusValue; //电子围栏半径
 
 @end
 
@@ -41,13 +44,6 @@
     [self initMap];
     
     [self initTipView];
-    
-    UIButton *btn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame = CGRectMake(10, 150, 80, 25);
-    btn.backgroundColor = [UIColor redColor];
-    [btn setTitle:@"Change" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
 }
 
 #pragma mark - Initialization
@@ -110,6 +106,40 @@
     [self setLocationManagerForHundredMeters]; //百米精确度
     //开始定位
     [_locationManager startUpdatingLocation];
+    
+    
+    __weak ElecFenceVC *weakSelf = self;
+    
+    _radiusPanView =  [[PanSingleProgressView alloc]initWithFrame:CGRectMake(15, self.mapView.height-260, WIDTH-30, 160) andUnit:@"km"];
+    _radiusPanView.title = @"设置半径";
+    _radiusPanView.y = HEIGHT;
+    _radiusPanView.sureSlect = ^(NSString *radiusValue){
+        NSLog(@"%@",radiusValue);
+        weakSelf.radiusValue = [radiusValue intValue]*1000;
+        [weakSelf updateElecFence];
+        [weakSelf hiddenPanView];
+    };
+    _radiusPanView.cancleSlect = ^(){
+        [weakSelf hiddenPanView];
+        [weakSelf removeElecFence];
+    };
+    [self.mapView addSubview:_radiusPanView];
+}
+
+- (void)hiddenPanView {
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        _radiusPanView.y = HEIGHT;
+    } completion:^(BOOL finished) {
+        _radiusPanView.hidden = YES;
+    }];
+}
+
+- (void)removeElecFence {
+    
+    [self.mapView removeOverlay:_currentCircle];
+    [self.circles removeObject:_currentCircle];
+    [self.mapView removeAnnotation:_anno];
 }
 
 - (void)initTipView {
@@ -141,13 +171,11 @@
     
 }
 
-- (void)buttonAction {
+- (void)updateElecFence {
     MACircleRenderer *circleRender = (MACircleRenderer *)[self.mapView rendererForOverlay:_currentCircle];
     
     if(circleRender) {
-//        circleRender.circle.coordinate = CLLocationCoordinate2DMake(circleRender.circle.coordinate.latitude + 0.01, circleRender.circle.coordinate.longitude + 0.01);
-        circleRender.circle.radius += 100;
-        
+        circleRender.circle.radius = self.radiusValue;
         [circleRender setNeedsUpdate];
     }
 }
@@ -199,10 +227,16 @@ updatingLocation:(BOOL)updatingLocation
     //将大头针添加到地图中
     [_mapView addAnnotation:_anno];
     
-    //设置电子围栏
+    //显示电子围栏
     _currentCircle = [MACircle circleWithCenterCoordinate:coordinate radius:1000];
     [self.mapView addOverlay:_currentCircle];
     [self.circles addObject:_currentCircle];
+    
+    //显示设置半径
+    _radiusPanView.hidden = NO;
+    [UIView animateWithDuration:0.5 animations:^{
+        _radiusPanView.y = self.mapView.height-_radiusPanView.height-50;
+    }];
 }
 
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id <MAOverlay>)overlay
