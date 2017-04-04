@@ -69,4 +69,9 @@
 
 - (IBAction)bloodPressureAction:(id)sender {
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 @end
