@@ -12,6 +12,7 @@
 #import "AEFilePath.h"
 #import "UserInfo.h"
 #import "BaseNC.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
 @interface AppDelegate ()
 {
@@ -28,6 +29,8 @@
     [[UserInfo share] getUserInfo];
     [AEFilePath createDirPath];
     [[NetworkUtil sharedInstance] listening]; //监测网络
+    //高德地图注册
+    [AMapServices sharedServices].apiKey = kMapKey;
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = PageColor;
