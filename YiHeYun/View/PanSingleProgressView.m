@@ -32,7 +32,7 @@
     if (self) {
         _unit = unit;
         radiusValue = @"1";
-        self.layer.cornerRadius = 3;
+        self.layer.cornerRadius = 5;
         self.layer.masksToBounds = YES;
         self.backgroundColor = [UIColor whiteColor];
         [self initView];

@@ -235,7 +235,7 @@ updatingLocation:(BOOL)updatingLocation
     //显示设置半径
     _radiusPanView.hidden = NO;
     [UIView animateWithDuration:0.5 animations:^{
-        _radiusPanView.y = self.mapView.height-_radiusPanView.height-50;
+        _radiusPanView.y = self.mapView.height-_radiusPanView.height-30;
     }];
 }
 
