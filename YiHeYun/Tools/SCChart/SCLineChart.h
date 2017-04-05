@@ -18,6 +18,8 @@
 #define UUTagLabelwidth     80
 
 @interface SCLineChart : UIView
+@property (nonatomic, copy) NSString *xUnit;
+@property (nonatomic, copy) NSString *yUnit;
 
 @property (strong, nonatomic) NSArray * xLabels;
 

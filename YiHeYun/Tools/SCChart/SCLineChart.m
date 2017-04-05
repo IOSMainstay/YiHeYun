@@ -14,6 +14,11 @@
 @interface SCLineChart()
 {
     UIScrollView *bgScrollView;
+
+        UILabel *xUnitLB;
+        UILabel *yUnitLB;
+        
+
 }
 @end
 
@@ -36,6 +41,13 @@
 {
     _yValues = yValues;
     [self setYLabels:yValues];
+}
+
+-(void)setYUnit:(NSString *)yUnit{
+    yUnitLB.text = yUnit;
+}
+-(void)setXUnit:(NSString *)xUnit{
+    xUnitLB.text = xUnit;
 }
 
 -(void)setYLabels:(NSArray *)yLabels
@@ -76,11 +88,17 @@
     for (int i=0; i<rowCount+1; i++) {
         SCChartLabel * label = [[SCChartLabel alloc] initWithFrame:CGRectMake(0.0,chartCavanHeight-i*levelHeight+5, UUYLabelwidth, UULabelHeight)];
 		label.text = [NSString stringWithFormat:@"%g",level * i+_yValueMin]; // 每个区间的值
-        if (i==rowCount) {
-            label.text = [NSString stringWithFormat:@"%gkg",level * i+_yValueMin]; // 每个区间的值
-        }
 		[bgScrollView addSubview:label];
     }
+
+    yUnitLB = [[UILabel alloc]initWithFrame:CGRectMake(30, 0, 200, 12)];
+    yUnitLB.textColor = AppThemeColor;
+    yUnitLB.font = [UIFont systemFontOfSize:11];
+    [bgScrollView addSubview:yUnitLB];
+
+
+
+
     if ([super respondsToSelector:@selector(setMarkRange:)]) {
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(UUYLabelwidth, (1-(_markRange.max-_yValueMin)/(_yValueMax-_yValueMin))*chartCavanHeight+UULabelHeight, self.frame.size.width-UUYLabelwidth, (_markRange.max-_markRange.min)/(_yValueMax-_yValueMin)*chartCavanHeight)];
         view.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.1];
@@ -88,8 +106,8 @@
     }
 
     //画横线
+    NSArray *arr = yLabels[0];
     for (int i=0; i<rowCount+1; i++) {
-        NSArray *arr = yLabels[0];
         if ([_ShowHorizonLine[i] integerValue]>0) {
             
             CAShapeLayer *shapeLayer = [CAShapeLayer layer];
@@ -104,6 +122,11 @@
             [bgScrollView.layer addSublayer:shapeLayer];
         }
     }
+
+    xUnitLB = [[UILabel alloc]initWithFrame:CGRectMake(UUYLabelwidth*arr.count+UUYLabelwidth+20, bgScrollView.height-12, 30, 12)];
+    xUnitLB.textColor = AppThemeColor;
+    xUnitLB.font = [UIFont systemFontOfSize:11];
+    [bgScrollView addSubview:xUnitLB];
 }
 
 
@@ -141,7 +164,7 @@
         shapeLayer.lineWidth = 1;
         [bgScrollView.layer addSublayer:shapeLayer];
     }
-    bgScrollView.contentSize = CGSizeMake(_xLabelWidth*(xLabels.count+1)+20, 0);
+    bgScrollView.contentSize = CGSizeMake(_xLabelWidth*(xLabels.count+2)+20, 0);
 }
 
 -(void)setColors:(NSArray *)colors

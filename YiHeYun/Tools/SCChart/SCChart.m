@@ -11,15 +11,17 @@
 
 @interface SCChart ()
 
-@property (strong, nonatomic) SCLineChart * lineChart;
-
-@property (strong, nonatomic) SCBarChart * barChart;
-
-@property (assign, nonatomic) id<SCChartDataSource> dataSource;
+//@property (strong, nonatomic) SCLineChart * lineChart;
+//
+//@property (strong, nonatomic) SCBarChart * barChart;
+//
+//@property (assign, nonatomic) id<SCChartDataSource> dataSource;
 
 @end
 
 @implementation SCChart
+
+
 
 -(id)initwithSCChartDataFrame:(CGRect)rect withSource:(id<SCChartDataSource>)dataSource withStyle:(SCChartStyle)style{
     self.dataSource = dataSource;
@@ -38,6 +40,14 @@
     return self;
 }
 
+-(void)setXUnit:(NSString *)xUnit{
+    _lineChart.xUnit = _xUnit;
+
+}
+-(void)setYUnit:(NSString *)yUnit{
+     _lineChart.yUnit = _yUnit;
+}
+
 -(void)setUpChart{
 	if (self.chartStyle == SCChartLineStyle) {
         
@@ -47,6 +57,8 @@
         if(!_lineChart){
             _lineChart = [[SCLineChart alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
             [self addSubview:_lineChart];
+            _lineChart.xUnit = _xUnit;
+            _lineChart.yUnit = _yUnit;
         }
         //选择标记范围
         if ([self.dataSource respondsToSelector:@selector(SCChartMarkRangeInLineChart:)]) {

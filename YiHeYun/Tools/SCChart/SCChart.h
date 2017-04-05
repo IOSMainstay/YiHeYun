@@ -55,11 +55,23 @@ typedef enum {
 @property (nonatomic, assign) BOOL showRange;
 
 @property (assign) SCChartStyle chartStyle;
+@property (nonatomic, copy) NSString *xUnit;
+@property (nonatomic, copy) NSString *yUnit;
+
+@property (strong, nonatomic) SCLineChart * lineChart;
+
+@property (strong, nonatomic) SCBarChart * barChart;
+
+@property (assign, nonatomic) id<SCChartDataSource> dataSource;
+
+
 
 -(id)initwithSCChartDataFrame:(CGRect)rect withSource:(id<SCChartDataSource>)dataSource withStyle:(SCChartStyle)style;
 
 - (void)showInView:(UIView *)view;
 
 -(void)strokeChart;
+
+
 
 @end

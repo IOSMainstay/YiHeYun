@@ -42,6 +42,8 @@
                                                withSource:self
                                                 withStyle:SCChartLineStyle];
     [chartView showInView:_whiteView];
+    chartView.lineChart.yUnit = @"kg";
+    chartView.lineChart.xUnit = @"day";
 }
 
 - (NSArray *)getXTitles:(int)num {
