@@ -130,6 +130,7 @@
 		811B51191E8AB62F00A7C717 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51181E8AB62F00A7C717 /* AboutUsVC.m */; };
 		811B511C1E8AB68200A7C717 /* AboutMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511B1E8AB68200A7C717 /* AboutMemberVC.m */; };
 		811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */; };
+		815398241E94E77F0036D7CD /* IndividualCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 815398231E94E77F0036D7CD /* IndividualCaseVC.m */; };
 		818502861E949A7200CED56D /* SUNSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 818502851E949A7200CED56D /* SUNSlideSwitchView.m */; };
 		8185028A1E94A2E500CED56D /* HealthRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818502891E94A2E500CED56D /* HealthRecordVC.m */; };
 		8185028D1E94A3A000CED56D /* LiveHabitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185028C1E94A3A000CED56D /* LiveHabitVC.m */; };
@@ -362,6 +363,8 @@
 		811B511B1E8AB68200A7C717 /* AboutMemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMemberVC.m; sourceTree = "<group>"; };
 		811B511D1E8B7A6F00A7C717 /* LeaveMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveMessageVC.h; sourceTree = "<group>"; };
 		811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveMessageVC.m; sourceTree = "<group>"; };
+		815398221E94E77F0036D7CD /* IndividualCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndividualCaseVC.h; sourceTree = "<group>"; };
+		815398231E94E77F0036D7CD /* IndividualCaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividualCaseVC.m; sourceTree = "<group>"; };
 		818502841E949A7200CED56D /* SUNSlideSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNSlideSwitchView.h; sourceTree = "<group>"; };
 		818502851E949A7200CED56D /* SUNSlideSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNSlideSwitchView.m; sourceTree = "<group>"; };
 		818502881E94A2E500CED56D /* HealthRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordVC.h; sourceTree = "<group>"; };
@@ -1025,6 +1028,8 @@
 				8185028F1E94A5F900CED56D /* HealthRecordChildBaseVC.m */,
 				818502931E94CD1C00CED56D /* UserInfoVC.h */,
 				818502941E94CD1C00CED56D /* UserInfoVC.m */,
+				815398221E94E77F0036D7CD /* IndividualCaseVC.h */,
+				815398231E94E77F0036D7CD /* IndividualCaseVC.m */,
 			);
 			path = "健康档案";
 			sourceTree = "<group>";
@@ -1193,6 +1198,7 @@
 				20D655EE1E93CE64004166B7 /* ElecFenceVC.m in Sources */,
 				2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */,
 				207242FE1E62C2FB00783CD4 /* AEFlowLayoutView.m in Sources */,
+				815398241E94E77F0036D7CD /* IndividualCaseVC.m in Sources */,
 				207243061E62C2FB00783CD4 /* JHHJView.m in Sources */,
 				207243091E62C2FB00783CD4 /* OptionsBarItem.m in Sources */,
 				207243071E62C2FB00783CD4 /* BottomLineView.m in Sources */,

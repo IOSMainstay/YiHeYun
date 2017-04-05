@@ -11,6 +11,7 @@
 
 #import "UserInfoVC.h"
 #import "LiveHabitVC.h"
+#import "IndividualCaseVC.h"
 
 #import "SUNSlideSwitchView.h"
 
@@ -23,7 +24,6 @@
 
 //显示的内容view
 @property (nonatomic, strong) NSArray *childVCS;
-@property (nonatomic, strong) UIView *menuView;
 @property (nonatomic,strong) UIView *headView;
 
 
@@ -47,7 +47,7 @@
     _childVCS = @[[[UserInfoVC alloc] init],
                   [[LiveHabitVC alloc] init],
                   [[LiveHabitVC alloc] init],
-                  [[LiveHabitVC alloc] init]];
+                  [[IndividualCaseVC alloc] init]];
     titleArray = @[@"个人资料",@"家庭病史",@"生活习惯",@"专属病史"];
   }
   return _childVCS;
