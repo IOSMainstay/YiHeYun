@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,4 +35,12 @@
 }
 */
 
+- (IBAction)daySelectAction:(UIButton *)sender {
+}
+
+- (IBAction)weekSelectAction:(UIButton *)sender {
+}
+
+- (IBAction)monthSelectAction:(UIButton *)sender {
+}
 @end
