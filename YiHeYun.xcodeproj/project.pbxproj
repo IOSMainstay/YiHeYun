@@ -125,13 +125,18 @@
 		3F83B1EC07029C604D2C6AB1 /* libPods-YiHeYun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */; };
 		811B51011E8A8BDC00A7C717 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811B50FF1E8A8BDC00A7C717 /* Me.storyboard */; };
 		811B51041E8AB39200A7C717 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51031E8AB39200A7C717 /* SettingVC.m */; };
-		811B51071E8AB48C00A7C717 /* HealthRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51061E8AB48C00A7C717 /* HealthRecordVC.m */; };
 		811B51101E8AB4D900A7C717 /* FeedbackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B510F1E8AB4D900A7C717 /* FeedbackVC.m */; };
-		811B51131E8AB58500A7C717 /* AddCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51121E8AB58500A7C717 /* AddCaseVC.m */; };
 		811B51161E8AB61500A7C717 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51151E8AB61500A7C717 /* HelpVC.m */; };
 		811B51191E8AB62F00A7C717 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B51181E8AB62F00A7C717 /* AboutUsVC.m */; };
 		811B511C1E8AB68200A7C717 /* AboutMemberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511B1E8AB68200A7C717 /* AboutMemberVC.m */; };
 		811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */; };
+		815398241E94E77F0036D7CD /* IndividualCaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 815398231E94E77F0036D7CD /* IndividualCaseVC.m */; };
+		818502861E949A7200CED56D /* SUNSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 818502851E949A7200CED56D /* SUNSlideSwitchView.m */; };
+		8185028A1E94A2E500CED56D /* HealthRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818502891E94A2E500CED56D /* HealthRecordVC.m */; };
+		8185028D1E94A3A000CED56D /* LiveHabitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185028C1E94A3A000CED56D /* LiveHabitVC.m */; };
+		818502901E94A5F900CED56D /* HealthRecordChildBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185028F1E94A5F900CED56D /* HealthRecordChildBaseVC.m */; };
+		818502921E94CA1C00CED56D /* red_line_and_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 818502911E94CA1C00CED56D /* red_line_and_shadow@2x.png */; };
+		818502951E94CD1C00CED56D /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 818502941E94CD1C00CED56D /* UserInfoVC.m */; };
 		81BB7A001E90961F00BED061 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BB79FF1E90961F00BED061 /* FriendsVC.m */; };
 		81BB7A031E90980600BED061 /* AddFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BB7A021E90980600BED061 /* AddFriendVC.m */; };
 		81D32C1C1E90AA2500133AE2 /* FriendInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D32C1B1E90AA2500133AE2 /* FriendInfoVC.m */; };
@@ -348,12 +353,8 @@
 		811B51001E8A8BDC00A7C717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Me.storyboard; sourceTree = "<group>"; };
 		811B51021E8AB39200A7C717 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		811B51031E8AB39200A7C717 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
-		811B51051E8AB48C00A7C717 /* HealthRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordVC.h; sourceTree = "<group>"; };
-		811B51061E8AB48C00A7C717 /* HealthRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordVC.m; sourceTree = "<group>"; };
 		811B510E1E8AB4D900A7C717 /* FeedbackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackVC.h; sourceTree = "<group>"; };
 		811B510F1E8AB4D900A7C717 /* FeedbackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackVC.m; sourceTree = "<group>"; };
-		811B51111E8AB58500A7C717 /* AddCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCaseVC.h; sourceTree = "<group>"; };
-		811B51121E8AB58500A7C717 /* AddCaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCaseVC.m; sourceTree = "<group>"; };
 		811B51141E8AB61500A7C717 /* HelpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpVC.h; sourceTree = "<group>"; };
 		811B51151E8AB61500A7C717 /* HelpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpVC.m; sourceTree = "<group>"; };
 		811B51171E8AB62F00A7C717 /* AboutUsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsVC.h; sourceTree = "<group>"; };
@@ -362,6 +363,19 @@
 		811B511B1E8AB68200A7C717 /* AboutMemberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMemberVC.m; sourceTree = "<group>"; };
 		811B511D1E8B7A6F00A7C717 /* LeaveMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaveMessageVC.h; sourceTree = "<group>"; };
 		811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaveMessageVC.m; sourceTree = "<group>"; };
+		815398221E94E77F0036D7CD /* IndividualCaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndividualCaseVC.h; sourceTree = "<group>"; };
+		815398231E94E77F0036D7CD /* IndividualCaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividualCaseVC.m; sourceTree = "<group>"; };
+		818502841E949A7200CED56D /* SUNSlideSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNSlideSwitchView.h; sourceTree = "<group>"; };
+		818502851E949A7200CED56D /* SUNSlideSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNSlideSwitchView.m; sourceTree = "<group>"; };
+		818502881E94A2E500CED56D /* HealthRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordVC.h; sourceTree = "<group>"; };
+		818502891E94A2E500CED56D /* HealthRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordVC.m; sourceTree = "<group>"; };
+		8185028B1E94A3A000CED56D /* LiveHabitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveHabitVC.h; sourceTree = "<group>"; };
+		8185028C1E94A3A000CED56D /* LiveHabitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveHabitVC.m; sourceTree = "<group>"; };
+		8185028E1E94A5F900CED56D /* HealthRecordChildBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordChildBaseVC.h; sourceTree = "<group>"; };
+		8185028F1E94A5F900CED56D /* HealthRecordChildBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordChildBaseVC.m; sourceTree = "<group>"; };
+		818502911E94CA1C00CED56D /* red_line_and_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_line_and_shadow@2x.png"; sourceTree = "<group>"; };
+		818502931E94CD1C00CED56D /* UserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoVC.h; sourceTree = "<group>"; };
+		818502941E94CD1C00CED56D /* UserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoVC.m; sourceTree = "<group>"; };
 		81BB79FE1E90961F00BED061 /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
 		81BB79FF1E90961F00BED061 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
 		81BB7A011E90980600BED061 /* AddFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendVC.h; sourceTree = "<group>"; };
@@ -405,6 +419,7 @@
 		0434E1BA1E72773D0088D533 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				818502831E949A7200CED56D /* SlideSwitch */,
 				0451066B1E764DB100874C06 /* Record */,
 				0448F8791E7645EF002FE5D3 /* SelectDateView.h */,
 				0448F8771E7645EA002FE5D3 /* SelectDateView.m */,
@@ -913,18 +928,15 @@
 		207243451E62CE0600783CD4 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				818502871E94A2E500CED56D /* 健康档案 */,
 				81BB79FD1E90958200BED061 /* 朋友 */,
 				2057885D1E8E430500885791 /* 个人信息 */,
 				044AC5041E6FE18400EE43E3 /* MineVC.h */,
 				044AC5051E6FE18400EE43E3 /* MineVC.m */,
 				811B51021E8AB39200A7C717 /* SettingVC.h */,
 				811B51031E8AB39200A7C717 /* SettingVC.m */,
-				811B51051E8AB48C00A7C717 /* HealthRecordVC.h */,
-				811B51061E8AB48C00A7C717 /* HealthRecordVC.m */,
 				811B510F1E8AB4D900A7C717 /* FeedbackVC.m */,
 				811B510E1E8AB4D900A7C717 /* FeedbackVC.h */,
-				811B51111E8AB58500A7C717 /* AddCaseVC.h */,
-				811B51121E8AB58500A7C717 /* AddCaseVC.m */,
 				811B51141E8AB61500A7C717 /* HelpVC.h */,
 				811B51151E8AB61500A7C717 /* HelpVC.m */,
 				811B51171E8AB62F00A7C717 /* AboutUsVC.h */,
@@ -993,6 +1005,33 @@
 				D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		818502831E949A7200CED56D /* SlideSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				818502911E94CA1C00CED56D /* red_line_and_shadow@2x.png */,
+				818502841E949A7200CED56D /* SUNSlideSwitchView.h */,
+				818502851E949A7200CED56D /* SUNSlideSwitchView.m */,
+			);
+			path = SlideSwitch;
+			sourceTree = "<group>";
+		};
+		818502871E94A2E500CED56D /* 健康档案 */ = {
+			isa = PBXGroup;
+			children = (
+				818502881E94A2E500CED56D /* HealthRecordVC.h */,
+				818502891E94A2E500CED56D /* HealthRecordVC.m */,
+				8185028B1E94A3A000CED56D /* LiveHabitVC.h */,
+				8185028C1E94A3A000CED56D /* LiveHabitVC.m */,
+				8185028E1E94A5F900CED56D /* HealthRecordChildBaseVC.h */,
+				8185028F1E94A5F900CED56D /* HealthRecordChildBaseVC.m */,
+				818502931E94CD1C00CED56D /* UserInfoVC.h */,
+				818502941E94CD1C00CED56D /* UserInfoVC.m */,
+				815398221E94E77F0036D7CD /* IndividualCaseVC.h */,
+				815398231E94E77F0036D7CD /* IndividualCaseVC.m */,
+			);
+			path = "健康档案";
 			sourceTree = "<group>";
 		};
 		81BB79FD1E90958200BED061 /* 朋友 */ = {
@@ -1080,6 +1119,7 @@
 				04AEAA861E77962B008112D8 /* nnn.png in Resources */,
 				207243131E62C2FB00783CD4 /* star_empty@2x.png in Resources */,
 				2072424D1E62B97100783CD4 /* LaunchScreen.storyboard in Resources */,
+				818502921E94CA1C00CED56D /* red_line_and_shadow@2x.png in Resources */,
 				2072424A1E62B97100783CD4 /* Assets.xcassets in Resources */,
 				207242481E62B97100783CD4 /* Main.storyboard in Resources */,
 				207243141E62C2FB00783CD4 /* star_empty@3x.png in Resources */,
@@ -1142,7 +1182,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				811B51071E8AB48C00A7C717 /* HealthRecordVC.m in Sources */,
 				0448F8781E7645EA002FE5D3 /* SelectDateView.m in Sources */,
 				207242F51E62C2FB00783CD4 /* PPCounterConst.m in Sources */,
 				207242F11E62C2FB00783CD4 /* AEAlertView.m in Sources */,
@@ -1159,8 +1198,8 @@
 				20D655EE1E93CE64004166B7 /* ElecFenceVC.m in Sources */,
 				2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */,
 				207242FE1E62C2FB00783CD4 /* AEFlowLayoutView.m in Sources */,
+				815398241E94E77F0036D7CD /* IndividualCaseVC.m in Sources */,
 				207243061E62C2FB00783CD4 /* JHHJView.m in Sources */,
-				811B51131E8AB58500A7C717 /* AddCaseVC.m in Sources */,
 				207243091E62C2FB00783CD4 /* OptionsBarItem.m in Sources */,
 				207243071E62C2FB00783CD4 /* BottomLineView.m in Sources */,
 				207243311E62C34800783CD4 /* UILabel+Add.m in Sources */,
@@ -1177,11 +1216,13 @@
 				207243041E62C2FB00783CD4 /* JHHJAnimation.m in Sources */,
 				207243341E62C34800783CD4 /* NSDictionary+DeleteNULL.m in Sources */,
 				2072431E1E62C2FB00783CD4 /* Utils.m in Sources */,
+				818502861E949A7200CED56D /* SUNSlideSwitchView.m in Sources */,
 				044AC5181E6FFBBD00EE43E3 /* BloodPressureSetVC.m in Sources */,
 				204E0AE71E93EAEE0031C01D /* PanSingleProgressView.m in Sources */,
 				04AEAA831E7792DC008112D8 /* SDCycleScrollView.m in Sources */,
 				207243331E62C34800783CD4 /* UIView+Extension.m in Sources */,
 				207243351E62C34800783CD4 /* UITabBar+RedPoint.m in Sources */,
+				818502951E94CD1C00CED56D /* UserInfoVC.m in Sources */,
 				811B51191E8AB62F00A7C717 /* AboutUsVC.m in Sources */,
 				2071EF1E1E74F82C001020D7 /* NetworkManager.m in Sources */,
 				2072430A1E62C2FB00783CD4 /* OptionsBarView.m in Sources */,
@@ -1208,8 +1249,10 @@
 				04AEAA811E7792DC008112D8 /* TAPageControl.m in Sources */,
 				207242FF1E62C2FB00783CD4 /* ImageViewer.m in Sources */,
 				044AC50C1E6FF18A00EE43E3 /* WeatherRemindVC.m in Sources */,
+				818502901E94A5F900CED56D /* HealthRecordChildBaseVC.m in Sources */,
 				04AEAA7E1E7792DC008112D8 /* TAAbstractDotView.m in Sources */,
 				044AC5031E6FE17300EE43E3 /* SetUpVC.m in Sources */,
+				8185028D1E94A3A000CED56D /* LiveHabitVC.m in Sources */,
 				207242FB1E62C2FB00783CD4 /* DefaultView.m in Sources */,
 				201CA2741E75805300E7DFE7 /* SetPswVC.m in Sources */,
 				811B51101E8AB4D900A7C717 /* FeedbackVC.m in Sources */,
@@ -1219,6 +1262,7 @@
 				207243301E62C34800783CD4 /* UIImage+Additions.m in Sources */,
 				81FE9BF31E8CEE100068582F /* UIButton+Extension.m in Sources */,
 				044AC4FA1E6FDFEE00EE43E3 /* LoginVC.m in Sources */,
+				8185028A1E94A2E500CED56D /* HealthRecordVC.m in Sources */,
 				207243171E62C2FB00783CD4 /* StarRatingView.m in Sources */,
 				811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */,
 				201CA26E1E7571DC00E7DFE7 /* RegisterVC.m in Sources */,

@@ -8,6 +8,11 @@
 
 #import "BaseVC.h"
 
+@protocol SlideSwitchSubviewDelegate <NSObject>
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
+-(void)showToast:(NSString *)message;
+@end
+
 @interface HealthRecordVC : BaseVC
 
 @end
