@@ -1,22 +1,22 @@
 //
-//  AddCaseVC.m
+//  HealthRecordChildBaseVC.m
 //  YiHeYun
 //
-//  Created by Ink on 2017/3/28.
+//  Created by Ink on 2017/4/5.
 //  Copyright © 2017年 yhy. All rights reserved.
 //
 
-#import "AddCaseVC.h"
+#import "HealthRecordChildBaseVC.h"
 
-@interface AddCaseVC ()
+@interface HealthRecordChildBaseVC ()
 
 @end
 
-@implementation AddCaseVC
+@implementation HealthRecordChildBaseVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  self.title = @"添加病例";
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
