@@ -829,7 +829,7 @@
                                         <rect key="frame" x="205" y="0.0" width="162" height="50"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="-26" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="2016-01-05">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -925,10 +925,10 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C2M-OQ-CYX">
-                                        <rect key="frame" x="139" y="421" width="80" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C2M-OQ-CYX">
+                                        <rect key="frame" x="120" y="429" width="118" height="83"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" image="button_record"/>
                                         <connections>
                                             <action selector="addWeightBtnAction:" destination="pYS-Rm-FuO" eventType="touchUpInside" id="c2Y-N3-Pzg"/>
                                         </connections>
@@ -2391,6 +2391,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_record" width="64" height="64"/>
         <image name="home0" width="85" height="85"/>
         <image name="home1" width="85" height="85"/>
         <image name="home2" width="85" height="85"/>

@@ -12,6 +12,8 @@
 {
 
     SCChart *chartView;
+
+
 }
 @end
 
@@ -21,6 +23,7 @@
     [super viewDidLoad];
     self.title = @"体重";
     [self configUI];
+
     _bgScrollView.contentSize = CGSizeMake(0, MAX(_addBtn.maxY+20, _bgScrollView.height+1));
 }
 
@@ -107,10 +110,51 @@
 */
 
 - (IBAction)selectStartDateBtn:(UIButton *)sender {
-}
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    [btn addTarget:self action:@selector(grayTouch:) forControlEvents:UIControlEventTouchUpInside];
+    btn.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    [self.view addSubview:btn];
 
+    PickDateView *pickDate = [[PickDateView alloc]initWithFrame:CGRectMake(0, HEIGHT-200, WIDTH, 200) andType:0];;
+    [btn addSubview:pickDate];
+    pickDate.getDate = ^(NSString *date){
+        [sender setTitle:date forState:0];
+    };
+
+}
+- (void)grayTouch:(UIButton *)sender{
+    [UIView animateWithDuration:0.2 animations:^{
+        sender.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        [sender removeFromSuperview];
+    }];
+}
 - (IBAction)selectEndDateBtn:(UIButton *)sender {
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    [btn addTarget:self action:@selector(grayTouch:) forControlEvents:UIControlEventTouchUpInside];
+    btn.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    [self.view addSubview:btn];
+
+    PickDateView *pickDate = [[PickDateView alloc]initWithFrame:CGRectMake(0, HEIGHT-200, WIDTH, 200) andType:0];;
+    [btn addSubview:pickDate];
+    pickDate.getDate = ^(NSString *date){
+        [sender setTitle:date forState:0];
+    };
 }
 - (IBAction)addWeightBtnAction:(UIButton *)sender {
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"请输入当前体重" message:@"" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+         alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [alertView show];
+    UITextField *nameField = [alertView textFieldAtIndex:0];
+    nameField.placeholder = @"请输入体重（kg）";
+
+}
+
+#pragma mark - UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    UITextField *passwordText = [alertView textFieldAtIndex:0];
+    //    passwordText.
+    NSLog(@"%@",passwordText.text);
+    NSLog(@"buttonIndex:%d",buttonIndex);
 }
 @end

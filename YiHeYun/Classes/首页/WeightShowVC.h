@@ -8,8 +8,9 @@
 
 #import "BaseVC.h"
 #import "SCChart.h"
+#import "PickDateView.h"
 
-@interface WeightShowVC : BaseVC
+@interface WeightShowVC : BaseVC<UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *startDateBtn;
 @property (weak, nonatomic) IBOutlet UIButton *endDateBtn;
 - (IBAction)selectStartDateBtn:(UIButton *)sender;
