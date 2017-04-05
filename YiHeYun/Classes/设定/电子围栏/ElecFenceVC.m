@@ -12,7 +12,7 @@
 #import <AMapLocationKit/AMapLocationManager.h>
 #import "PanSingleProgressView.h"
 
-@interface ElecFenceVC ()<MAMapViewDelegate,AMapLocationManagerDelegate>
+@interface ElecFenceVC ()<MAMapViewDelegate,AMapLocationManagerDelegate,UITableViewDelegate,UITableViewDataSource>
 {
     UIView *_tipView;
 }
@@ -44,6 +44,8 @@
     [self initMap];
     
     [self initTipView];
+    
+    [self initTabView];
 }
 
 #pragma mark - Initialization
@@ -156,6 +158,15 @@
     [_tipView addSubview:tipTitleLab];
 }
 
+- (void)initTabView {
+    
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(WIDTH-165, 0, 150, 132) style:UITableViewStylePlain];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.hidden = YES;
+    [_mapView addSubview:self.tableView];
+}
+
 #pragma mark - methods
 
 //定位
@@ -168,7 +179,7 @@
 //设置
 - (void)settingAction {
     
-    
+    self.tableView.hidden = NO;
 }
 
 - (void)updateElecFence {
@@ -177,6 +188,64 @@
     if(circleRender) {
         circleRender.circle.radius = self.radiusValue;
         [circleRender setNeedsUpdate];
+    }
+}
+
+#pragma mark - UITableView 代理
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifer = @"addFriendCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifer];
+    if (! cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    
+    if (indexPath.row==0) {
+        cell.imageView.image = [UIImage imageNamed:@"nav_menu_signal"];
+        cell.textLabel.text = @"电子围栏";
+    }
+    
+    if (indexPath.row==1) {
+        cell.imageView.image = [UIImage imageNamed:@"nav_menu_sitelist"];
+        cell.textLabel.text = @"位置列表";
+    }
+    
+    if (indexPath.row==2) {
+        cell.imageView.image = [UIImage imageNamed:@"nav_menu_time"];
+        cell.textLabel.text = @"定时更新";
+    }
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row==0) {
+        //电子围栏
+        
+    }
+    
+    if (indexPath.row==1) {
+        //位置列表
+        
+    }
+    
+    if (indexPath.row==2) {
+        //定时更新
+        
     }
 }
 

@@ -33,7 +33,23 @@
 
 -(void)logoutAction {
   // @TODO: logout
-
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"", @"loginName",
+                         nil];
+    [[NetworkManager sharedManager] postJSON:URL_Login parameters:dic imagePath:nil completion:^(id responseData, RequestState status, NSError *error) {
+        
+        if (status == Request_Success) {
+            [Utils showToast:@"退出成功"];
+            
+            [[UserInfo share] setUserInfo:nil];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kLogoutSuccNotification object:nil];
+            
+        } else {
+            [Utils showToast:@"退出失败"];
+        }
+    }];
 }
 
 - (void) showSharePickerView {
