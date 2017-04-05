@@ -22,5 +22,7 @@
 - (IBAction)daySelectAction:(UIButton *)sender;
 - (IBAction)weekSelectAction:(UIButton *)sender;
 - (IBAction)monthSelectAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIView *leftView;
+@property (weak, nonatomic) IBOutlet UIView *rightView;
 
 @end

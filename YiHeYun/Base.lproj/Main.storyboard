@@ -1335,7 +1335,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" id="n7E-IM-Uot">
-                                        <rect key="frame" x="10" y="18" width="355" height="370"/>
+                                        <rect key="frame" x="10" y="18" width="355" height="348"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="6c6-gw-TxY">
@@ -1343,40 +1343,40 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全天睡眠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Znb-l7-8jr">
-                                                <rect key="frame" x="0.0" y="240" width="177" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="全天睡眠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Znb-l7-8jr">
+                                                <rect key="frame" x="0.0" y="218" width="177" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深度睡眠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="92k-pK-ZCI">
-                                                <rect key="frame" x="170" y="240" width="177" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="深度睡眠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="92k-pK-ZCI">
+                                                <rect key="frame" x="170" y="218" width="177" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.4小时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MyQ-Hd-Raa">
-                                                <rect key="frame" x="0.0" y="260" width="177" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7.4小时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MyQ-Hd-Raa">
+                                                <rect key="frame" x="0.0" y="238" width="177" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.3小时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugB-nO-ek6">
-                                                <rect key="frame" x="170" y="260" width="177" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2.3小时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugB-nO-ek6">
+                                                <rect key="frame" x="170" y="238" width="177" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" misplaced="YES" id="duT-45-GbL">
-                                                <rect key="frame" x="20" y="310" width="137" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="20" y="288" width="137" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="深睡占比" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4kJ-Pd-8eO">
-                                                        <rect key="frame" x="0.0" y="10" width="70" height="21"/>
+                                                        <rect key="frame" x="8" y="10" width="70" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -1397,18 +1397,18 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" misplaced="YES" id="8AA-G2-6ay">
-                                                <rect key="frame" x="190" y="310" width="137" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="frame" x="190" y="288" width="137" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="睡眠质量" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WKK-Td-KCJ">
-                                                        <rect key="frame" x="0.0" y="10" width="70" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="睡眠质量" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WKK-Td-KCJ">
+                                                        <rect key="frame" x="6" y="10" width="70" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="良好" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Sc-TU-mRS">
-                                                        <rect key="frame" x="73" y="0.0" width="64" height="40"/>
+                                                        <rect key="frame" x="76" y="0.0" width="64" height="40"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.68627450980000004" green="0.28627450980000002" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1429,7 +1429,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pVh-z6-AUA">
-                                        <rect key="frame" x="0.0" y="397" width="375" height="29"/>
+                                        <rect key="frame" x="0.0" y="374" width="375" height="29"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="金牌！恭喜你，已经连续10天达标。继续努力！" image="icon_jin">
@@ -1437,7 +1437,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gBp-uM-QxU">
-                                        <rect key="frame" x="15" y="457" width="115" height="109"/>
+                                        <rect key="frame" x="15" y="413" width="115" height="109"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="button_day_n"/>
                                         <state key="selected" image="button_day_s"/>
@@ -1447,7 +1447,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OpB-n6-wQY">
-                                        <rect key="frame" x="130" y="457" width="115" height="109"/>
+                                        <rect key="frame" x="130" y="413" width="115" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="button_week_n"/>
                                         <state key="selected" image="button_week_s"/>
@@ -1457,7 +1457,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NKy-jb-BBa">
-                                        <rect key="frame" x="245" y="457" width="115" height="109"/>
+                                        <rect key="frame" x="245" y="413" width="115" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="button_year_n"/>
                                         <state key="selected" image="button_year_s"/>
@@ -1478,7 +1478,9 @@
                         <outlet property="dateLB1" destination="MyQ-Hd-Raa" id="1rQ-zA-GNf"/>
                         <outlet property="dateLB2" destination="ugB-nO-ek6" id="rQD-8z-GT5"/>
                         <outlet property="dayBtn" destination="gBp-uM-QxU" id="0bv-8c-QLD"/>
+                        <outlet property="leftView" destination="duT-45-GbL" id="MNK-Mi-Brs"/>
                         <outlet property="monthBtn" destination="NKy-jb-BBa" id="pkG-3Q-zda"/>
+                        <outlet property="rightView" destination="8AA-G2-6ay" id="iQa-AS-kRz"/>
                         <outlet property="sleepStatusLB" destination="1Sc-TU-mRS" id="Z4T-dR-gOx"/>
                         <outlet property="statuesLB" destination="pVh-z6-AUA" id="20o-u6-EeW"/>
                         <outlet property="weekBtn" destination="OpB-n6-wQY" id="zEa-Vq-ToF"/>

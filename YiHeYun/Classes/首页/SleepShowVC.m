@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _leftView.layer.borderWidth = 1;
+    _leftView.layer.borderColor = AppThemeColor.CGColor;
 
+    _rightView.layer.borderWidth = 1;
+    _rightView.layer.borderColor = AppThemeColor.CGColor;
+
+self.title = @"睡眠";
+
+    
 }
 
 
@@ -36,11 +44,20 @@
 */
 
 - (IBAction)daySelectAction:(UIButton *)sender {
+    sender.selected = YES;
+    _weekBtn.selected = NO;
+    _monthBtn.selected = NO;
 }
 
 - (IBAction)weekSelectAction:(UIButton *)sender {
+    sender.selected = YES;
+    _dayBtn.selected = NO;
+    _monthBtn.selected = NO;
 }
 
 - (IBAction)monthSelectAction:(UIButton *)sender {
+    sender.selected = YES;
+    _weekBtn.selected = NO;
+    _dayBtn.selected = NO;
 }
 @end
