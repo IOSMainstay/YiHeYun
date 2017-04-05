@@ -238,6 +238,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="4C0-cL-WuN" kind="show" identifier="addFriendSegue" id="Old-g7-bIl"/>
+                        <segue destination="6m6-o2-6be" kind="show" identifier="friendInfoSegue" id="3qc-dm-sHW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8zr-vo-wna" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -308,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="2118" y="2385"/>
         </scene>
-        <!--健康档案-->
+        <!--添加朋友-->
         <scene sceneID="Xxn-SD-Mb7">
             <objects>
-                <viewController title="健康档案" id="4C0-cL-WuN" customClass="AddFriendVC" sceneMemberID="viewController">
+                <viewController title="添加朋友" id="4C0-cL-WuN" customClass="AddFriendVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7DF-4C-GgA"/>
                         <viewControllerLayoutGuide type="bottom" id="39N-JT-Jpz"/>
@@ -325,6 +326,26 @@
                     <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7I-Qu-BNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3577" y="394"/>
+        </scene>
+        <!--朋友详情-->
+        <scene sceneID="Aja-Gu-q8b">
+            <objects>
+                <viewController title="朋友详情" id="6m6-o2-6be" customClass="FriendInfoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bn8-z8-qUr"/>
+                        <viewControllerLayoutGuide type="bottom" id="shN-wd-KGf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EeC-YW-RdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="朋友详情" id="5P5-IT-m33"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXM-DH-Lum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2862" y="394"/>
         </scene>

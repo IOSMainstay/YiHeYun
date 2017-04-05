@@ -23,8 +23,12 @@
   [super viewDidLoad];
   self.title = @"朋友";
 
-  self.dataSource = [NSArray new];
-//  self.dataSource = @[@"张三",@"张三",@"张三"];
+  // TODO: test
+  if (arc4random()%2 == 0) {
+    self.dataSource = [NSArray new];
+  } else {
+    self.dataSource = @[@"张三",@"张三",@"张三"];
+  }
   [self creatTableView];
 }
 
@@ -34,8 +38,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
-  UIViewController *destinatVC = segue.destinationViewController;
-  destinatVC.hidesBottomBarWhenPushed = true;
+  if ([segue.identifier  isEqual: @"friendInfoSegue"]) {
+    UIViewController *friendInfoVC = segue.destinationViewController;
+    friendInfoVC.hidesBottomBarWhenPushed = true;
+
+//    NSObject *frendInfo = sender;
+//    friendInfoVC.Info = frendInfo
+  }
+
 }
 
 #pragma mark - UITableView
@@ -84,7 +94,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  [self performSegueWithIdentifier:@"segue" sender:self.dataSource[indexPath.row]];
+  [self performSegueWithIdentifier:@"friendInfoSegue" sender:self.dataSource[indexPath.row]];
 }
 
 #pragma mark - EmptyDataSet

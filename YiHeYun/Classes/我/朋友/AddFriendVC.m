@@ -38,7 +38,6 @@
 
 -(void)sendVerificationAction {
   [self startTimeCount:verificationSendButton];
-  [self cancelTimeCount];
 }
 
 - (void)creatTableView
@@ -53,11 +52,11 @@
   footerView.backgroundColor = [UIColor clearColor];
   tableView.tableFooterView = footerView;
 
-  UIButton *logoutButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, WIDTH, 50)];
-  [logoutButton setTitle:@"添加" forState:UIControlStateNormal];
-  [logoutButton addTarget:self action:@selector(saveFriendAction) forControlEvents:UIControlEventTouchUpInside];
-  [logoutButton setBackgroundColor:AEColor(126, 53, 150, 1)];
-  [footerView addSubview:logoutButton];
+  UIButton *addButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, WIDTH, 50)];
+  [addButton setTitle:@"添加" forState:UIControlStateNormal];
+  [addButton addTarget:self action:@selector(saveFriendAction) forControlEvents:UIControlEventTouchUpInside];
+  [addButton setBackgroundColor:AEColor(126, 53, 150, 1)];
+  [footerView addSubview:addButton];
 }
 
 #pragma mark -UITableViewDataSource

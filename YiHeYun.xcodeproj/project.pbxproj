@@ -134,6 +134,7 @@
 		811B511F1E8B7A6F00A7C717 /* LeaveMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */; };
 		81BB7A001E90961F00BED061 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BB79FF1E90961F00BED061 /* FriendsVC.m */; };
 		81BB7A031E90980600BED061 /* AddFriendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BB7A021E90980600BED061 /* AddFriendVC.m */; };
+		81D32C1C1E90AA2500133AE2 /* FriendInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D32C1B1E90AA2500133AE2 /* FriendInfoVC.m */; };
 		81FE9BF31E8CEE100068582F /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FE9BF21E8CEE100068582F /* UIButton+Extension.m */; };
 /* End PBXBuildFile section */
 
@@ -365,6 +366,8 @@
 		81BB79FF1E90961F00BED061 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
 		81BB7A011E90980600BED061 /* AddFriendVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendVC.h; sourceTree = "<group>"; };
 		81BB7A021E90980600BED061 /* AddFriendVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendVC.m; sourceTree = "<group>"; };
+		81D32C1A1E90AA2500133AE2 /* FriendInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInfoVC.h; sourceTree = "<group>"; };
+		81D32C1B1E90AA2500133AE2 /* FriendInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInfoVC.m; sourceTree = "<group>"; };
 		81FE9BF11E8CEE100068582F /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		81FE9BF21E8CEE100068582F /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		D6C52900FDCF0578B3A78110 /* libPods-YiHeYun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YiHeYun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -999,6 +1002,8 @@
 				81BB79FF1E90961F00BED061 /* FriendsVC.m */,
 				81BB7A011E90980600BED061 /* AddFriendVC.h */,
 				81BB7A021E90980600BED061 /* AddFriendVC.m */,
+				81D32C1A1E90AA2500133AE2 /* FriendInfoVC.h */,
+				81D32C1B1E90AA2500133AE2 /* FriendInfoVC.m */,
 			);
 			path = "朋友";
 			sourceTree = "<group>";
@@ -1141,6 +1146,7 @@
 				0448F8781E7645EA002FE5D3 /* SelectDateView.m in Sources */,
 				207242F51E62C2FB00783CD4 /* PPCounterConst.m in Sources */,
 				207242F11E62C2FB00783CD4 /* AEAlertView.m in Sources */,
+				81D32C1C1E90AA2500133AE2 /* FriendInfoVC.m in Sources */,
 				2071EF211E74F850001020D7 /* UserInfo.m in Sources */,
 				207242F71E62C2FB00783CD4 /* UIButton+PPCounter.m in Sources */,
 				044AC5091E6FF16E00EE43E3 /* LongSitRemindSetVC.m in Sources */,
