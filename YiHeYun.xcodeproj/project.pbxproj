@@ -991,6 +991,7 @@
 		207243451E62CE0600783CD4 /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				209DFEA81E9686DD00AAA59A /* 添加设备 */,
 				818502871E94A2E500CED56D /* 健康档案 */,
 				81BB79FD1E90958200BED061 /* 朋友 */,
 				2057885D1E8E430500885791 /* 个人信息 */,
@@ -1042,6 +1043,13 @@
 				209DFE981E96795A00AAA59A /* UICountingLabel.m */,
 			);
 			path = SCChart;
+			sourceTree = "<group>";
+		};
+		209DFEA81E9686DD00AAA59A /* 添加设备 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "添加设备";
 			sourceTree = "<group>";
 		};
 		20D655EB1E93CACF004166B7 /* 电子围栏 */ = {
