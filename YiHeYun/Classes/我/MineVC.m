@@ -8,6 +8,7 @@
 
 #import "MineVC.h"
 #import "PersonInfoVC.h"
+#import "AddDeviceVC.h"
 
 @interface MineVC ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -131,7 +132,7 @@
         
         UILabel *stateLab = [[UILabel alloc]initWithFrame:CGRectMake(100, 12, WIDTH-130, 20)];
         stateLab.text = @"未佩戴／离线／剩余电量88%";
-        stateLab.font = [UIFont systemFontOfSize:15];
+        stateLab.font = [UIFont systemFontOfSize:14];
         stateLab.textColor = [UIColor darkGrayColor];
         stateLab.textAlignment = NSTextAlignmentRight;
         [cell.contentView addSubview:stateLab];
@@ -149,7 +150,7 @@
         addCaseBtn.layer.borderColor = AppThemeColor.CGColor;
         addCaseBtn.layer.cornerRadius = 20;
         addCaseBtn.layer.masksToBounds = true;
-        
+        addCaseBtn.userInteractionEnabled = NO;
         [cell.contentView addSubview:addCaseBtn];
         
         cell.accessoryType = UITableViewCellAccessoryNone;
@@ -164,7 +165,7 @@
                 UILabel *friendsLab = [[UILabel alloc]initWithFrame:CGRectMake(100, 12, WIDTH-130, 20)];
                 friendsLab.text = @"2人";
                 friendsLab.textColor = [UIColor darkGrayColor];
-                friendsLab.font = [UIFont systemFontOfSize:15];
+                friendsLab.font = [UIFont systemFontOfSize:14];
                 friendsLab.textAlignment = NSTextAlignmentRight;
                 [cell.contentView addSubview:friendsLab];
                 
@@ -179,7 +180,7 @@
                 UILabel *phoneLab = [[UILabel alloc]initWithFrame:CGRectMake(100, 12, WIDTH-130, 20)];
                 phoneLab.text = @"010-89441121234";
                 phoneLab.textColor = [UIColor darkGrayColor];
-                phoneLab.font = [UIFont systemFontOfSize:15];
+                phoneLab.font = [UIFont systemFontOfSize:14];
                 phoneLab.textAlignment = NSTextAlignmentRight;
                 [cell.contentView addSubview:phoneLab];
                 
@@ -247,6 +248,9 @@
             [self showMaskView];
         } else if (indexPath.row == 1) {
             
+            AddDeviceVC *vc = [[AddDeviceVC alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
         } else {
             
         }

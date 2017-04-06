@@ -23,6 +23,7 @@
 
 #define URL_Login @"YH10104" //登录
 #define URL_Register @"YH10103" //注册
+#define URL_BindOrUnBindDevice @"YH12111" //绑定设备或解绑设备
 
 
 #endif /* ServerUrl_h */

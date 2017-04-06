@@ -44,6 +44,10 @@
 		2057886A1E8E431B00885791 /* PersonInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788631E8E431B00885791 /* PersonInfoVC.m */; };
 		2057886B1E8E431B00885791 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 205788651E8E431B00885791 /* address.plist */; };
 		2057886C1E8E431B00885791 /* SkyerCityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 205788671E8E431B00885791 /* SkyerCityPicker.m */; };
+		2068250E1E968EE500B3DBB4 /* AddDeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2068250D1E968EE500B3DBB4 /* AddDeviceVC.m */; };
+		206825111E96942B00B3DBB4 /* AddSmartWatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 206825101E96942B00B3DBB4 /* AddSmartWatchVC.m */; };
+		206825141E9695AE00B3DBB4 /* InputIMEIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 206825131E9695AE00B3DBB4 /* InputIMEIVC.m */; };
+		206825171E969CF400B3DBB4 /* ScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 206825161E969CF400B3DBB4 /* ScanVC.m */; };
 		2071EF1E1E74F82C001020D7 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2071EF1D1E74F82C001020D7 /* NetworkManager.m */; };
 		2071EF211E74F850001020D7 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2071EF201E74F850001020D7 /* UserInfo.m */; };
 		2072423F1E62B97100783CD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072423E1E62B97100783CD4 /* main.m */; };
@@ -232,6 +236,14 @@
 		205788651E8E431B00885791 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		205788661E8E431B00885791 /* SkyerCityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyerCityPicker.h; sourceTree = "<group>"; };
 		205788671E8E431B00885791 /* SkyerCityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyerCityPicker.m; sourceTree = "<group>"; };
+		2068250C1E968EE500B3DBB4 /* AddDeviceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDeviceVC.h; sourceTree = "<group>"; };
+		2068250D1E968EE500B3DBB4 /* AddDeviceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDeviceVC.m; sourceTree = "<group>"; };
+		2068250F1E96942B00B3DBB4 /* AddSmartWatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSmartWatchVC.h; sourceTree = "<group>"; };
+		206825101E96942B00B3DBB4 /* AddSmartWatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSmartWatchVC.m; sourceTree = "<group>"; };
+		206825121E9695AE00B3DBB4 /* InputIMEIVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputIMEIVC.h; sourceTree = "<group>"; };
+		206825131E9695AE00B3DBB4 /* InputIMEIVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputIMEIVC.m; sourceTree = "<group>"; };
+		206825151E969CF400B3DBB4 /* ScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanVC.h; sourceTree = "<group>"; };
+		206825161E969CF400B3DBB4 /* ScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanVC.m; sourceTree = "<group>"; };
 		2071EF1C1E74F82C001020D7 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		2071EF1D1E74F82C001020D7 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		2071EF1F1E74F850001020D7 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
@@ -1048,6 +1060,14 @@
 		209DFEA81E9686DD00AAA59A /* 添加设备 */ = {
 			isa = PBXGroup;
 			children = (
+				2068250C1E968EE500B3DBB4 /* AddDeviceVC.h */,
+				2068250D1E968EE500B3DBB4 /* AddDeviceVC.m */,
+				2068250F1E96942B00B3DBB4 /* AddSmartWatchVC.h */,
+				206825101E96942B00B3DBB4 /* AddSmartWatchVC.m */,
+				206825121E9695AE00B3DBB4 /* InputIMEIVC.h */,
+				206825131E9695AE00B3DBB4 /* InputIMEIVC.m */,
+				206825151E969CF400B3DBB4 /* ScanVC.h */,
+				206825161E969CF400B3DBB4 /* ScanVC.m */,
 			);
 			path = "添加设备";
 			sourceTree = "<group>";
@@ -1343,6 +1363,7 @@
 				207243051E62C2FB00783CD4 /* JHHJCenterBGView.m in Sources */,
 				207242F81E62C2FB00783CD4 /* UILabel+PPCounter.m in Sources */,
 				207243011E62C2FB00783CD4 /* ImgScrollView.m in Sources */,
+				206825141E9695AE00B3DBB4 /* InputIMEIVC.m in Sources */,
 				201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */,
 				207242FC1E62C2FB00783CD4 /* AEEmitterButton.m in Sources */,
 				2072432F1E62C34800783CD4 /* UIImage+Color.m in Sources */,
@@ -1401,7 +1422,10 @@
 				207243081E62C2FB00783CD4 /* OptionBarController.m in Sources */,
 				2072423F1E62B97100783CD4 /* main.m in Sources */,
 				207242F31E62C2FB00783CD4 /* AEUpdateView.m in Sources */,
+				206825171E969CF400B3DBB4 /* ScanVC.m in Sources */,
+				206825111E96942B00B3DBB4 /* AddSmartWatchVC.m in Sources */,
 				2072431B1E62C2FB00783CD4 /* AEUIToolbar.m in Sources */,
+				2068250E1E968EE500B3DBB4 /* AddDeviceVC.m in Sources */,
 				20939B791E8880BA00012664 /* UIImage+GradientColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

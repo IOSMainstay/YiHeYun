@@ -32,7 +32,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="navy" placeholder="请输入11位手机号码" textAlignment="natural" minimumFontSize="17" id="5bK-AF-zhs">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="15737936517" placeholder="请输入11位手机号码" textAlignment="natural" minimumFontSize="17" id="5bK-AF-zhs">
                                         <rect key="frame" x="113" y="0.0" width="240" height="50"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <nil key="textColor"/>
