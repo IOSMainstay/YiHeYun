@@ -8,6 +8,7 @@
 
 #import "AddSmartWatchVC.h"
 #import "InputIMEIVC.h"
+#import "ScanVC.h"
 
 @interface AddSmartWatchVC ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -62,7 +63,8 @@
     
     NSString *titleStr = _dataArr[indexPath.row];
     if ([titleStr isEqualToString:@"扫描二维码"]) {
-        
+        ScanVC *vc = [[ScanVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
     
     if ([titleStr isEqualToString:@"输入IMEI"]) {

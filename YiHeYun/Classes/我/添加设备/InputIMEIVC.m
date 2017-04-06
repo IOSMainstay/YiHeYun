@@ -62,7 +62,7 @@
     [JHHJView showLoadingOnTheKeyWindowWithType:JHHJViewTypeSingleLine]; //开始加载
     
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
-                         [UserInfo share].accountId, @"memberId",
+                         [UserInfo share].memberId, @"memberId",
                          imeTF.text, @"terminalId",
                          @"1001", @"deviceId",
                          nil];
