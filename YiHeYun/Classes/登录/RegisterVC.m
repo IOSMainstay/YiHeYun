@@ -74,7 +74,7 @@
     NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
                          [[Utils transform:_nameTF.text] stringByReplacingOccurrencesOfString:@" " withString:@""], @"accountId",
                          _nameTF.text, @"memberName",
-                         _pswTF.text, @"passowrd",
+                         _pswTF.text, @"password",
                          _phoneTF.text, @"mobileNo",
                          nil];
     [[NetworkManager sharedManager] postJSON:URL_Register parameters:dic imagePath:nil completion:^(id responseData, RequestState status, NSError *error) {

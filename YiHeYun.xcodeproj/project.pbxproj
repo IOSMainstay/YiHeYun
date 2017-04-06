@@ -103,6 +103,23 @@
 		2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072433B1E62C9F500783CD4 /* BaseNC.m */; };
 		2072433F1E62C9F500783CD4 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2072433D1E62C9F500783CD4 /* BaseVC.m */; };
 		20939B791E8880BA00012664 /* UIImage+GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 20939B781E8880BA00012664 /* UIImage+GradientColor.m */; };
+		209DFE7B1E96792D00AAA59A /* BloodPressureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE741E96792D00AAA59A /* BloodPressureVC.m */; };
+		209DFE7C1E96792D00AAA59A /* BloodSugarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE761E96792D00AAA59A /* BloodSugarVC.m */; };
+		209DFE7D1E96792D00AAA59A /* SleepShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE781E96792D00AAA59A /* SleepShowVC.m */; };
+		209DFE7E1E96792D00AAA59A /* WeightShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE7A1E96792D00AAA59A /* WeightShowVC.m */; };
+		209DFE991E96795A00AAA59A /* SCBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE811E96795A00AAA59A /* SCBar.m */; };
+		209DFE9A1E96795A00AAA59A /* SCBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE831E96795A00AAA59A /* SCBarChart.m */; };
+		209DFE9B1E96795A00AAA59A /* SCChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE851E96795A00AAA59A /* SCChart.m */; };
+		209DFE9C1E96795A00AAA59A /* SCChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE881E96795A00AAA59A /* SCChartLabel.m */; };
+		209DFE9D1E96795A00AAA59A /* SCCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE8A1E96795A00AAA59A /* SCCircleChart.m */; };
+		209DFE9E1E96795A00AAA59A /* SCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE8C1E96795A00AAA59A /* SCColor.m */; };
+		209DFE9F1E96795A00AAA59A /* SCGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE8E1E96795A00AAA59A /* SCGenericChart.m */; };
+		209DFEA01E96795A00AAA59A /* SCLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE901E96795A00AAA59A /* SCLineChart.m */; };
+		209DFEA11E96795A00AAA59A /* SCPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE921E96795A00AAA59A /* SCPieChart.m */; };
+		209DFEA21E96795A00AAA59A /* SCPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE941E96795A00AAA59A /* SCPieChartDataItem.m */; };
+		209DFEA31E96795A00AAA59A /* SCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE961E96795A00AAA59A /* SCTool.m */; };
+		209DFEA41E96795A00AAA59A /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFE981E96795A00AAA59A /* UICountingLabel.m */; };
+		209DFEA71E96798100AAA59A /* PickDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 209DFEA61E96798100AAA59A /* PickDateView.m */; };
 		20D655EE1E93CE64004166B7 /* ElecFenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D655ED1E93CE64004166B7 /* ElecFenceVC.m */; };
 		20D655F31E93D376004166B7 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D655F11E93D376004166B7 /* AMapFoundationKit.framework */; };
 		20D655F41E93D376004166B7 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D655F21E93D376004166B7 /* MAMapKit.framework */; };
@@ -327,6 +344,41 @@
 		2072433D1E62C9F500783CD4 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		20939B771E8880BA00012664 /* UIImage+GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GradientColor.h"; sourceTree = "<group>"; };
 		20939B781E8880BA00012664 /* UIImage+GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GradientColor.m"; sourceTree = "<group>"; };
+		209DFE731E96792D00AAA59A /* BloodPressureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodPressureVC.h; sourceTree = "<group>"; };
+		209DFE741E96792D00AAA59A /* BloodPressureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodPressureVC.m; sourceTree = "<group>"; };
+		209DFE751E96792D00AAA59A /* BloodSugarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodSugarVC.h; sourceTree = "<group>"; };
+		209DFE761E96792D00AAA59A /* BloodSugarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BloodSugarVC.m; sourceTree = "<group>"; };
+		209DFE771E96792D00AAA59A /* SleepShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepShowVC.h; sourceTree = "<group>"; };
+		209DFE781E96792D00AAA59A /* SleepShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SleepShowVC.m; sourceTree = "<group>"; };
+		209DFE791E96792D00AAA59A /* WeightShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightShowVC.h; sourceTree = "<group>"; };
+		209DFE7A1E96792D00AAA59A /* WeightShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightShowVC.m; sourceTree = "<group>"; };
+		209DFE801E96795A00AAA59A /* SCBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBar.h; sourceTree = "<group>"; };
+		209DFE811E96795A00AAA59A /* SCBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBar.m; sourceTree = "<group>"; };
+		209DFE821E96795A00AAA59A /* SCBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBarChart.h; sourceTree = "<group>"; };
+		209DFE831E96795A00AAA59A /* SCBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBarChart.m; sourceTree = "<group>"; };
+		209DFE841E96795A00AAA59A /* SCChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChart.h; sourceTree = "<group>"; };
+		209DFE851E96795A00AAA59A /* SCChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChart.m; sourceTree = "<group>"; };
+		209DFE861E96795A00AAA59A /* SCChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChartDelegate.h; sourceTree = "<group>"; };
+		209DFE871E96795A00AAA59A /* SCChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChartLabel.h; sourceTree = "<group>"; };
+		209DFE881E96795A00AAA59A /* SCChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChartLabel.m; sourceTree = "<group>"; };
+		209DFE891E96795A00AAA59A /* SCCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCircleChart.h; sourceTree = "<group>"; };
+		209DFE8A1E96795A00AAA59A /* SCCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCircleChart.m; sourceTree = "<group>"; };
+		209DFE8B1E96795A00AAA59A /* SCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCColor.h; sourceTree = "<group>"; };
+		209DFE8C1E96795A00AAA59A /* SCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCColor.m; sourceTree = "<group>"; };
+		209DFE8D1E96795A00AAA59A /* SCGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGenericChart.h; sourceTree = "<group>"; };
+		209DFE8E1E96795A00AAA59A /* SCGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGenericChart.m; sourceTree = "<group>"; };
+		209DFE8F1E96795A00AAA59A /* SCLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLineChart.h; sourceTree = "<group>"; };
+		209DFE901E96795A00AAA59A /* SCLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLineChart.m; sourceTree = "<group>"; };
+		209DFE911E96795A00AAA59A /* SCPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPieChart.h; sourceTree = "<group>"; };
+		209DFE921E96795A00AAA59A /* SCPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPieChart.m; sourceTree = "<group>"; };
+		209DFE931E96795A00AAA59A /* SCPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPieChartDataItem.h; sourceTree = "<group>"; };
+		209DFE941E96795A00AAA59A /* SCPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPieChartDataItem.m; sourceTree = "<group>"; };
+		209DFE951E96795A00AAA59A /* SCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTool.h; sourceTree = "<group>"; };
+		209DFE961E96795A00AAA59A /* SCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTool.m; sourceTree = "<group>"; };
+		209DFE971E96795A00AAA59A /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		209DFE981E96795A00AAA59A /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		209DFEA51E96798100AAA59A /* PickDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickDateView.h; sourceTree = "<group>"; };
+		209DFEA61E96798100AAA59A /* PickDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickDateView.m; sourceTree = "<group>"; };
 		20D655EC1E93CE64004166B7 /* ElecFenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElecFenceVC.h; sourceTree = "<group>"; };
 		20D655ED1E93CE64004166B7 /* ElecFenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElecFenceVC.m; sourceTree = "<group>"; };
 		20D655F11E93D376004166B7 /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
@@ -663,6 +715,9 @@
 				207242EF1E62C2FB00783CD4 /* Utils.m */,
 				207242851E62C2FB00783CD4 /* AEFilePath.h */,
 				207242861E62C2FB00783CD4 /* AEFilePath.m */,
+				209DFEA51E96798100AAA59A /* PickDateView.h */,
+				209DFEA61E96798100AAA59A /* PickDateView.m */,
+				209DFE7F1E96795A00AAA59A /* SCChart */,
 				20E3E3861E894E1D00FC8A72 /* PieAnimationView(环形进度条) */,
 				04AEAA671E7792DC008112D8 /* SDCycleScrollView */,
 				207242871E62C2FB00783CD4 /* AlterView(弹框) */,
@@ -919,6 +974,14 @@
 		207243441E62CE0600783CD4 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				209DFE731E96792D00AAA59A /* BloodPressureVC.h */,
+				209DFE741E96792D00AAA59A /* BloodPressureVC.m */,
+				209DFE751E96792D00AAA59A /* BloodSugarVC.h */,
+				209DFE761E96792D00AAA59A /* BloodSugarVC.m */,
+				209DFE771E96792D00AAA59A /* SleepShowVC.h */,
+				209DFE781E96792D00AAA59A /* SleepShowVC.m */,
+				209DFE791E96792D00AAA59A /* WeightShowVC.h */,
+				209DFE7A1E96792D00AAA59A /* WeightShowVC.m */,
 				044AC4FB1E6FE12100EE43E3 /* HomeVC.h */,
 				044AC4FC1E6FE12100EE43E3 /* HomeVC.m */,
 			);
@@ -947,6 +1010,38 @@
 				811B511E1E8B7A6F00A7C717 /* LeaveMessageVC.m */,
 			);
 			path = "我";
+			sourceTree = "<group>";
+		};
+		209DFE7F1E96795A00AAA59A /* SCChart */ = {
+			isa = PBXGroup;
+			children = (
+				209DFE801E96795A00AAA59A /* SCBar.h */,
+				209DFE811E96795A00AAA59A /* SCBar.m */,
+				209DFE821E96795A00AAA59A /* SCBarChart.h */,
+				209DFE831E96795A00AAA59A /* SCBarChart.m */,
+				209DFE841E96795A00AAA59A /* SCChart.h */,
+				209DFE851E96795A00AAA59A /* SCChart.m */,
+				209DFE861E96795A00AAA59A /* SCChartDelegate.h */,
+				209DFE871E96795A00AAA59A /* SCChartLabel.h */,
+				209DFE881E96795A00AAA59A /* SCChartLabel.m */,
+				209DFE891E96795A00AAA59A /* SCCircleChart.h */,
+				209DFE8A1E96795A00AAA59A /* SCCircleChart.m */,
+				209DFE8B1E96795A00AAA59A /* SCColor.h */,
+				209DFE8C1E96795A00AAA59A /* SCColor.m */,
+				209DFE8D1E96795A00AAA59A /* SCGenericChart.h */,
+				209DFE8E1E96795A00AAA59A /* SCGenericChart.m */,
+				209DFE8F1E96795A00AAA59A /* SCLineChart.h */,
+				209DFE901E96795A00AAA59A /* SCLineChart.m */,
+				209DFE911E96795A00AAA59A /* SCPieChart.h */,
+				209DFE921E96795A00AAA59A /* SCPieChart.m */,
+				209DFE931E96795A00AAA59A /* SCPieChartDataItem.h */,
+				209DFE941E96795A00AAA59A /* SCPieChartDataItem.m */,
+				209DFE951E96795A00AAA59A /* SCTool.h */,
+				209DFE961E96795A00AAA59A /* SCTool.m */,
+				209DFE971E96795A00AAA59A /* UICountingLabel.h */,
+				209DFE981E96795A00AAA59A /* UICountingLabel.m */,
+			);
+			path = SCChart;
 			sourceTree = "<group>";
 		};
 		20D655EB1E93CACF004166B7 /* 电子围栏 */ = {
@@ -1182,12 +1277,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209DFE9D1E96795A00AAA59A /* SCCircleChart.m in Sources */,
 				0448F8781E7645EA002FE5D3 /* SelectDateView.m in Sources */,
 				207242F51E62C2FB00783CD4 /* PPCounterConst.m in Sources */,
 				207242F11E62C2FB00783CD4 /* AEAlertView.m in Sources */,
+				209DFEA21E96795A00AAA59A /* SCPieChartDataItem.m in Sources */,
 				81D32C1C1E90AA2500133AE2 /* FriendInfoVC.m in Sources */,
+				209DFE9B1E96795A00AAA59A /* SCChart.m in Sources */,
+				209DFE9A1E96795A00AAA59A /* SCBarChart.m in Sources */,
 				2071EF211E74F850001020D7 /* UserInfo.m in Sources */,
 				207242F71E62C2FB00783CD4 /* UIButton+PPCounter.m in Sources */,
+				209DFEA01E96795A00AAA59A /* SCLineChart.m in Sources */,
 				044AC5091E6FF16E00EE43E3 /* LongSitRemindSetVC.m in Sources */,
 				207243031E62C2FB00783CD4 /* AEIndicator.m in Sources */,
 				04AEAA841E7792DC008112D8 /* UIView+SDExtension.m in Sources */,
@@ -1195,8 +1295,10 @@
 				0434E1C01E728CC00088D533 /* SelectTimeView.m in Sources */,
 				207242F61E62C2FB00783CD4 /* PPCounterEngine.m in Sources */,
 				0434E1C61E729C660088D533 /* PanProgressView.m in Sources */,
+				209DFE7C1E96792D00AAA59A /* BloodSugarVC.m in Sources */,
 				20D655EE1E93CE64004166B7 /* ElecFenceVC.m in Sources */,
 				2072433E1E62C9F500783CD4 /* BaseNC.m in Sources */,
+				209DFE9E1E96795A00AAA59A /* SCColor.m in Sources */,
 				207242FE1E62C2FB00783CD4 /* AEFlowLayoutView.m in Sources */,
 				815398241E94E77F0036D7CD /* IndividualCaseVC.m in Sources */,
 				207243061E62C2FB00783CD4 /* JHHJView.m in Sources */,
@@ -1204,6 +1306,7 @@
 				207243071E62C2FB00783CD4 /* BottomLineView.m in Sources */,
 				207243311E62C34800783CD4 /* UILabel+Add.m in Sources */,
 				207242FA1E62C2FB00783CD4 /* PGIndexBannerSubiew.m in Sources */,
+				209DFE7B1E96792D00AAA59A /* BloodPressureVC.m in Sources */,
 				2072431A1E62C2FB00783CD4 /* AEUITextField.m in Sources */,
 				2072433F1E62C9F500783CD4 /* BaseVC.m in Sources */,
 				207242F01E62C2FB00783CD4 /* AEFilePath.m in Sources */,
@@ -1215,6 +1318,8 @@
 				811B51161E8AB61500A7C717 /* HelpVC.m in Sources */,
 				207243041E62C2FB00783CD4 /* JHHJAnimation.m in Sources */,
 				207243341E62C34800783CD4 /* NSDictionary+DeleteNULL.m in Sources */,
+				209DFEA71E96798100AAA59A /* PickDateView.m in Sources */,
+				209DFE7D1E96792D00AAA59A /* SleepShowVC.m in Sources */,
 				2072431E1E62C2FB00783CD4 /* Utils.m in Sources */,
 				818502861E949A7200CED56D /* SUNSlideSwitchView.m in Sources */,
 				044AC5181E6FFBBD00EE43E3 /* BloodPressureSetVC.m in Sources */,
@@ -1233,11 +1338,14 @@
 				201CA2711E7571F400E7DFE7 /* ForgetPswVC.m in Sources */,
 				207242FC1E62C2FB00783CD4 /* AEEmitterButton.m in Sources */,
 				2072432F1E62C34800783CD4 /* UIImage+Color.m in Sources */,
+				209DFE7E1E96792D00AAA59A /* WeightShowVC.m in Sources */,
 				207243191E62C2FB00783CD4 /* AEButton.m in Sources */,
 				81BB7A031E90980600BED061 /* AddFriendVC.m in Sources */,
 				207243001E62C2FB00783CD4 /* ImgLargeScrollView.m in Sources */,
 				205788681E8E431B00885791 /* EditVC.m in Sources */,
 				044AC4FD1E6FE12100EE43E3 /* HomeVC.m in Sources */,
+				209DFE9F1E96795A00AAA59A /* SCGenericChart.m in Sources */,
+				209DFEA31E96795A00AAA59A /* SCTool.m in Sources */,
 				811B51041E8AB39200A7C717 /* SettingVC.m in Sources */,
 				04AEAA631E7783A0008112D8 /* UrgentCallVC.m in Sources */,
 				207242781E62C13500783CD4 /* NetworkUtil.m in Sources */,
@@ -1253,6 +1361,9 @@
 				04AEAA7E1E7792DC008112D8 /* TAAbstractDotView.m in Sources */,
 				044AC5031E6FE17300EE43E3 /* SetUpVC.m in Sources */,
 				8185028D1E94A3A000CED56D /* LiveHabitVC.m in Sources */,
+				209DFEA41E96795A00AAA59A /* UICountingLabel.m in Sources */,
+				209DFEA11E96795A00AAA59A /* SCPieChart.m in Sources */,
+				209DFE9C1E96795A00AAA59A /* SCChartLabel.m in Sources */,
 				207242FB1E62C2FB00783CD4 /* DefaultView.m in Sources */,
 				201CA2741E75805300E7DFE7 /* SetPswVC.m in Sources */,
 				811B51101E8AB4D900A7C717 /* FeedbackVC.m in Sources */,
@@ -1275,6 +1386,7 @@
 				044AC5061E6FE18400EE43E3 /* MineVC.m in Sources */,
 				207243321E62C34800783CD4 /* UIView+Animation.m in Sources */,
 				81BB7A001E90961F00BED061 /* FriendsVC.m in Sources */,
+				209DFE991E96795A00AAA59A /* SCBar.m in Sources */,
 				207243391E62C85900783CD4 /* ZBAlertView.m in Sources */,
 				2057886A1E8E431B00885791 /* PersonInfoVC.m in Sources */,
 				04AEAA801E7792DC008112D8 /* TADotView.m in Sources */,
